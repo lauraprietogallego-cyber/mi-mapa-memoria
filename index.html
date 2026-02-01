@@ -23,8 +23,11 @@
             pointer-events: auto; color: #333;
         }
         .step.active { opacity: 1; }
+
+        /* EL TITULAR ROJO */
         h1 { color: #b71c1c; font-size: 26px; margin-bottom: 20px; }
-        h2 { color: #b71c1c; font-size: 22px; margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        h2 { color: #b71c1c !important; font-size: 22px !important; font-weight: bold !important; margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        
         .content-body img, .content-body iframe { width: 100% !important; border-radius: 4px; margin-top: 10px; border:none; min-height: 300px;}
         .creditos { font-size: 12px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
         
@@ -48,7 +51,7 @@
 
 <div class="search-container">
     <select id="indice-lugares" onchange="irAlLugar(this.value)">
-        <option value="">Lista de lugares...</option>
+        <option value="">Ir a un lugar...</option>
     </select>
 </div>
 
@@ -60,20 +63,20 @@
 <div id="features">
     <section class="step active" id="intro1">
         <h1>Inventario de Lugares de Memoria Democrática</h1>
-        <p>Recorrido visual por los espacios declarados por el Gobierno, ordenados geográficamente de Norte a Sur.</p>
+        <p>Recorrido visual de Norte a Sur por los hitos de la memoria en España.</p>
     </section>
     <section class="step" id="intro2">
-        <p>Este mapa utiliza tecnología de satélite de alta resolución para explorar monumentos, prisiones y espacios de lucha democrática.</p>
+        <p>Explora la historia a través de esta visión satelital de alta resolución.</p>
     </section>
     <section class="step" id="intro3">
-        <p>Usa el scroll o el índice superior para navegar. Al llegar a cada punto, el mapa se posicionará automáticamente.</p>
+        <p>Usa el buscador o el scroll para navegar.</p>
         <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
     </section>
 
     <section class="step" id="cierre-final">
         <h2>Un inventario en constante evolución</h2>
         <p>Estos son los lugares aprobados a fecha de 2026. La ley garantiza que este mapa seguirá creciendo conforme se tramiten nuevos expedientes.</p>
-        <div class="creditos">Proyecto Final - Especialidad Periodismo de Datos 2026</div>
+        <div class="creditos">Proyecto Final - 2026</div>
     </section>
 </div>
 
@@ -84,17 +87,9 @@
 
     const map = new maplibregl.Map({
         container: 'map',
-        // Asegúrate de que esta URL no tenga espacios raros al final
         style: 'https://api.maptiler.com/maps/satellite/style.json?key=hwXj4DxXQkfeEuviuUmj',
         center: [-3.7, 40.2],
-        zoom: 5.5,
-        pitch: 0,
-        interactive: false 
-    });
-
-    // Función para manejar errores de carga del estilo
-    map.on('error', function() {
-        console.warn("Reintentando cargar el mapa...");
+        zoom: 5.5, pitch: 0, interactive: false 
     });
 
     function navigate(direction) {
@@ -118,23 +113,25 @@
             const target = document.getElementById('cierre-final');
             const select = document.getElementById('indice-lugares');
             
-            puntosOrdenados = data.features.sort((a, b) => {
-                return b.geometry.coordinates[1] - a.geometry.coordinates[1];
-            });
+            puntosOrdenados = data.features.sort((a, b) => b.geometry.coordinates[1] - a.geometry.coordinates[1]);
 
             puntosOrdenados.forEach((feature, i) => {
                 const section = document.createElement('section');
                 section.className = 'step';
                 section.id = 'puntos-' + i;
-                const titulo = (feature.properties.name || "Lugar").replace(/<\/?[^>]+(>|$)/g, "");
-                const contenido = feature.properties.description || feature.properties.name || "";
+                
+                // Limpieza absoluta del título
+                const textoCompleto = feature.properties.name || "Lugar";
+                // Intentamos sacar la primera línea o el texto antes de un <br> o <b>
+                const tituloLimpio = textoCompleto.split(/[<|\n]/)[0].replace(/<\/?[^>]+(>|$)/g, "").substring(0, 60);
+                const contenidoCuerpo = feature.properties.description || feature.properties.name || "";
 
-                section.innerHTML = `<h2>${titulo}</h2><div class="content-body">${contenido}</div>`;
+                section.innerHTML = `<h2>${tituloLimpio}</h2><div class="content-body">${contenidoCuerpo}</div>`;
                 container.insertBefore(section, target);
 
                 const option = document.createElement('option');
                 option.value = i;
-                option.text = titulo.substring(0, 35) + "...";
+                option.text = tituloLimpio;
                 select.appendChild(option);
             });
             
@@ -158,10 +155,7 @@
                             if (puntosOrdenados[index]) {
                                 map.flyTo({ 
                                     center: puntosOrdenados[index].geometry.coordinates, 
-                                    zoom: 18.5, 
-                                    pitch: 50, 
-                                    speed: 1.0, 
-                                    essential: true
+                                    zoom: 18.5, pitch: 50, speed: 1.0, essential: true
                                 });
                             }
                         }
