@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <title>StoryMap: Lugares de Memoria</title>
+    <title>StoryMap Pro: Memoria Democrática</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
     <style>
-        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #000; }
+        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #000; overflow-x: hidden; }
         #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; }
         
         #features {
@@ -28,6 +28,7 @@
             transition: opacity 0.4s;
             border-top: 8px solid #b71c1c;
             pointer-events: auto;
+            color: #333;
         }
 
         .step.active { opacity: 1; }
@@ -35,17 +36,20 @@
         h1 { color: #b71c1c; font-size: 26px; margin-bottom: 20px; }
         h2 { color: #b71c1c; font-size: 22px; margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
         
+        /* Ajuste para gráficos, fotos y vídeos (8M, etc) */
         .content-body img, .content-body iframe {
             width: 100% !important;
             height: auto;
-            min-height: 250px;
+            min-height: 300px;
             display: block;
             margin: 15px 0;
             border-radius: 4px;
+            border: none;
         }
 
         .creditos { font-size: 13px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
 
+        /* Flechas flotantes */
         .nav-buttons {
             position: fixed; bottom: 30px; right: 30px; z-index: 100;
             display: flex; flex-direction: column; gap: 10px;
@@ -53,7 +57,9 @@
         .nav-btn {
             background: #b71c1c; color: white; border: none; width: 50px; height: 50px;
             border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
         }
+        .nav-btn:hover { background: #e53935; transform: scale(1.1); }
 
         @media (max-width: 750px) { #features { width: 90%; margin: auto; } }
     </style>
@@ -70,87 +76,8 @@
 <div id="features">
     <section class="step active" id="intro1">
         <h1>Inventario de Lugares de Memoria Democrática</h1>
-        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España...</p>
+        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España y ha iniciado el proceso para declarar otros 18, entre los que hay fechas destacadas de la historia pero también espacios variopintos, como antiguas prisiones, palacios, un teatro, una mina, un puente, varias ciudades e incluso islas.</p>
     </section>
 
     <section class="step" id="intro2">
-        <p>Esta figura busca reconocer y explicar la historia vinculada a la represión y la lucha por la democracia.</p>
-    </section>
-
-    <section class="step" id="intro3">
-        <p>En el siguiente mapa interactivo se encuentra información de los lugares que ya cuentan con este reconocimiento.</p>
-        <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
-    </section>
-</div>
-
-<script>
-    let currentStep = 0;
-
-    const map = new maplibregl.Map({
-        container: 'map',
-        style: 'https://api.maptiler.com/maps/dataviz-v4/style.json?key=hwXj4DxXQkfeEuviuUmj',
-        center: [-3.7, 40.2],
-        zoom: 5.5,
-        pitch: 0,
-        interactive: false 
-    });
-
-    function navigate(direction) {
-        const steps = document.querySelectorAll('.step');
-        currentStep = Math.max(0, Math.min(steps.length - 1, currentStep + direction));
-        steps[currentStep].scrollIntoView({ behavior: 'smooth' });
-    }
-
-    fetch('./datos.geojson')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById('features');
-            
-            data.features.forEach((feature, i) => {
-                const section = document.createElement('section');
-                section.className = 'step';
-                section.id = 'puntos-' + i;
-                
-                const titulo = feature.properties.name || "Lugar de Memoria";
-                const contenido = feature.properties.description || feature.properties.name || "";
-
-                section.innerHTML = `
-                    <h2>${titulo}</h2>
-                    <div class="content-body">${contenido}</div>
-                `;
-                container.appendChild(section);
-            });
-
-            window.onscroll = () => {
-                const steps = document.querySelectorAll('.step');
-                steps.forEach((step, i) => {
-                    const rect = step.getBoundingClientRect();
-                    if (rect.top > 0 && rect.top < window.innerHeight * 0.6) {
-                        currentStep = i;
-                        
-                        if (i < 3) {
-                            map.flyTo({ center: [-3.7, 40.2], zoom: 5.5, pitch: 0, speed: 1.2 });
-                        } else {
-                            const index = i - 3;
-                            if (data.features[index]) {
-                                const coords = data.features[index].geometry.coordinates;
-                                map.flyTo({ 
-                                    center: coords, 
-                                    zoom: 19,      // ZOOM MÁXIMO
-                                    pitch: 45,     // Inclinación ideal para zoom alto
-                                    speed: 1.2,    // Un poco más rápido para que el planeo sea fluido
-                                    curve: 1.42,   // Efecto de curvatura en el vuelo
-                                    essential: true
-                                });
-                            }
-                        }
-                        
-                        steps.forEach(s => s.classList.remove('active'));
-                        step.classList.add('active');
-                    }
-                });
-            };
-        });
-</script>
-</body>
-</html>
+        <p>La intención del Gobierno con esta figura, recogida en la ley de Memoria Democrática de 2022, es reconocer y explicar
