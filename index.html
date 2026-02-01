@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <title>StoryMap Pro: Memoria Democrática</title>
+    <title>StoryMap Satelital: Memoria Democrática</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
@@ -10,56 +10,21 @@
         body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #000; overflow-x: hidden; }
         #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; }
         
-        #features {
-            width: 38%;
-            margin-left: 5%;
-            padding-top: 10vh;
-            padding-bottom: 80vh;
-            pointer-events: none;
-        }
-
+        #features { width: 38%; margin-left: 5%; padding-top: 10vh; padding-bottom: 80vh; pointer-events: none; }
         .step {
-            padding: 30px;
-            margin-bottom: 100vh;
-            background: rgba(255, 255, 255, 0.98);
-            border-radius: 8px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-            opacity: 0.1;
-            transition: opacity 0.4s;
-            border-top: 8px solid #b71c1c;
-            pointer-events: auto;
-            color: #333;
+            padding: 30px; margin-bottom: 100vh; background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            opacity: 0.1; transition: opacity 0.4s; border-top: 8px solid #b71c1c;
+            pointer-events: auto; color: #333;
         }
-
         .step.active { opacity: 1; }
-
         h1 { color: #b71c1c; font-size: 26px; margin-bottom: 20px; }
         h2 { color: #b71c1c; font-size: 22px; margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        .content-body img, .content-body iframe { width: 100% !important; border-radius: 4px; margin-top: 10px; border:none; min-height: 300px;}
+        .creditos { font-size: 12px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
         
-        /* Ajuste para gráficos, fotos y vídeos (8M, etc) */
-        .content-body img, .content-body iframe {
-            width: 100% !important;
-            height: auto;
-            min-height: 300px;
-            display: block;
-            margin: 15px 0;
-            border-radius: 4px;
-            border: none;
-        }
-
-        .creditos { font-size: 13px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
-
-        /* Flechas flotantes */
-        .nav-buttons {
-            position: fixed; bottom: 30px; right: 30px; z-index: 100;
-            display: flex; flex-direction: column; gap: 10px;
-        }
-        .nav-btn {
-            background: #b71c1c; color: white; border: none; width: 50px; height: 50px;
-            border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-        .nav-btn:hover { background: #e53935; transform: scale(1.1); }
+        .nav-buttons { position: fixed; bottom: 30px; right: 30px; z-index: 100; display: flex; flex-direction: column; gap: 10px; }
+        .nav-btn { background: #b71c1c; color: white; border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 
         @media (max-width: 750px) { #features { width: 90%; margin: auto; } }
     </style>
@@ -76,8 +41,77 @@
 <div id="features">
     <section class="step active" id="intro1">
         <h1>Inventario de Lugares de Memoria Democrática</h1>
-        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España y ha iniciado el proceso para declarar otros 18, entre los que hay fechas destacadas de la historia pero también espacios variopintos, como antiguas prisiones, palacios, un teatro, una mina, un puente, varias ciudades e incluso islas.</p>
+        <p>Recorrido visual por los espacios declarados por el Gobierno, de Norte a Sur.</p>
     </section>
-
     <section class="step" id="intro2">
-        <p>La intención del Gobierno con esta figura, recogida en la ley de Memoria Democrática de 2022, es reconocer y explicar
+        <p>La Ley de Memoria Democrática de 2022 busca reconocer la historia detrás de estos espacios físicos.</p>
+    </section>
+    <section class="step" id="intro3">
+        <p>Sigue bajando para activar la vista de satélite de alta resolución.</p>
+        <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
+    </section>
+</div>
+
+<script>
+    let currentStep = 0;
+    let puntosOrdenados = [];
+
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://api.maptiler.com/maps/satellite/style.json?key=hwXj4DxXQkfeEuviuUmj', // CAMBIO A SATÉLITE
+        center: [-3.7, 40.2],
+        zoom: 5.5,
+        pitch: 0,
+        interactive: false 
+    });
+
+    function navigate(direction) {
+        const steps = document.querySelectorAll('.step');
+        currentStep = Math.max(0, Math.min(steps.length - 1, currentStep + direction));
+        steps[currentStep].scrollIntoView({ behavior: 'smooth' });
+    }
+
+    fetch('./datos.geojson')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('features');
+            puntosOrdenados = data.features.sort((a, b) => b.geometry.coordinates[1] - a.geometry.coordinates[1]);
+
+            puntosOrdenados.forEach((feature, i) => {
+                const section = document.createElement('section');
+                section.className = 'step';
+                section.id = 'puntos-' + i;
+                section.innerHTML = `<h2>${feature.properties.name || "Lugar"}</h2><div class="content-body">${feature.properties.description || ""}</div>`;
+                container.appendChild(section);
+            });
+
+            window.onscroll = () => {
+                const steps = document.querySelectorAll('.step');
+                steps.forEach((step, i) => {
+                    const rect = step.getBoundingClientRect();
+                    if (rect.top > 0 && rect.top < window.innerHeight * 0.6) {
+                        currentStep = i;
+                        if (i < 3) {
+                            map.flyTo({ center: [-3.7, 40.2], zoom: 5.5, pitch: 0, speed: 1.2 });
+                        } else {
+                            const index = i - 3;
+                            if (puntosOrdenados[index]) {
+                                map.flyTo({ 
+                                    center: puntosOrdenados[index].geometry.coordinates, 
+                                    zoom: 18.5, // Zoom de alta resolución
+                                    pitch: 60,  // Inclinación para ver volumen
+                                    speed: 1.0, 
+                                    curve: 1.2,
+                                    essential: true
+                                });
+                            }
+                        }
+                        steps.forEach(s => s.classList.remove('active'));
+                        step.classList.add('active');
+                    }
+                });
+            };
+        });
+</script>
+</body>
+</html>
