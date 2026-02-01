@@ -7,46 +7,47 @@
     <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
     <style>
-        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #f4f4f4; }
+        body { margin: 0; padding: 0; font-family: sans-serif; background: #000; }
         #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; }
         
         #features {
             width: 40%;
             margin-left: 5%;
-            padding-top: 5vh;
-            padding-bottom: 50vh;
+            padding-top: 10vh;
+            padding-bottom: 80vh;
         }
 
         .step {
             padding: 30px;
-            margin-bottom: 90vh;
+            margin-bottom: 100vh;
             background: rgba(255, 255, 255, 0.98);
             border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
             opacity: 0.1;
-            transition: opacity 0.5s;
+            transition: opacity 0.4s;
             border-top: 8px solid #b71c1c;
+            color: #000 !important;
         }
 
         .step.active { opacity: 1; }
 
-        h1 { color: #b71c1c; font-size: 26px; margin-bottom: 20px; }
-        h2 { color: #b71c1c; font-size: 20px; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        p { font-size: 16px; line-height: 1.6; color: #333; }
+        /* Estilo del nombre del lugar en rojo */
+        h2 { color: #b71c1c; font-size: 22px; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-top: 0; }
         
-        /* Ajuste para que las imágenes y vídeos que metiste en uMap se vean bien aquí */
         .step img, .step iframe {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
+            max-width: 100% !important;
+            height: auto !important;
+            display: block;
             margin: 15px 0;
+            border-radius: 4px;
         }
 
-        .creditos { font-size: 12px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #ddd; padding-top: 10px; }
-
-        @media (max-width: 750px) {
-            #features { width: 90%; margin: 5% auto; }
+        .content-body * {
+            color: #333 !important;
+            font-weight: normal !important;
         }
+
+        .creditos { font-size: 13px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
     </style>
 </head>
 <body>
@@ -55,19 +56,18 @@
 <div id="features">
     <section class="step active" id="intro1">
         <h1>Inventario de Lugares de Memoria Democrática</h1>
-        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España y ha iniciado el proceso para declarar otros 18...</p>
+        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España...</p>
     </section>
 
     <section class="step" id="intro2">
-        <p>La intención del Gobierno con esta figura, recogida en la ley de Memoria Democrática de 2022, es reconocer y explicar la historia que hay detrás de estos espacios.</p>
+        <p>La intención del Gobierno es reconocer y explicar la historia de estos espacios vinculados a la represión franquista o a la lucha por la democracia.</p>
     </section>
 
     <section class="step" id="intro3">
-        <p>En el siguiente mapa interactivo se encuentra información de los lugares que ya cuentan con este reconocimiento.</p>
+        <p>Sigue bajando para recorrer los lugares confirmados hasta la fecha.</p>
         <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
     </section>
-
-    </div>
+</div>
 
 <script>
     const map = new maplibregl.Map({
@@ -89,13 +89,16 @@
                 section.className = 'step';
                 section.id = 'puntos-' + i;
                 
-                // Usamos innerHTML para que si metiste código de fotos o vídeos se vea
-                // Sacamos la info del campo 'name' que es donde uMap guarda el Título
-                const contenidoExtraido = feature.properties.name || "Cargando información...";
+                // Extraemos el nombre para el título y el resto para el contenido
+                // Asumiendo que metiste todo en 'name', intentamos separar el primer título
+                const fullContent = feature.properties.name || feature.properties.description || "";
+                
+                // Creamos un título limpio (usamos el nombre del punto si existe)
+                const nombreLugar = feature.properties.name_original || "Lugar de Memoria";
 
                 section.innerHTML = `
-                    <h2>Lugar de Memoria</h2>
-                    <div>${contenidoExtraido}</div>
+                    <h2>${nombreLugar}</h2>
+                    <div class="content-body">${fullContent}</div>
                 `;
                 container.appendChild(section);
             });
@@ -104,19 +107,23 @@
                 const steps = document.querySelectorAll('.step');
                 steps.forEach((step, i) => {
                     const rect = step.getBoundingClientRect();
-                    if (rect.top > 0 && rect.top < window.innerHeight * 0.5) {
-                        
-                        if (step.id.includes('intro')) {
+                    if (rect.top > 0 && rect.top < window.innerHeight * 0.6) {
+                        if (i < 3) {
                             map.flyTo({ center: [-3.7, 40.2], zoom: 5.5, pitch: 45 });
                         } else {
-                            // Buscamos el punto correspondiente (restando las 3 intros)
                             const index = i - 3;
                             if (data.features[index]) {
                                 const coords = data.features[index].geometry.coordinates;
-                                map.flyTo({ center: coords, zoom: 14, pitch: 60, speed: 0.5 });
+                                // AJUSTES: speed 0.8 (más rápido) y zoom 16 (más cerca)
+                                map.flyTo({ 
+                                    center: coords, 
+                                    zoom: 16, 
+                                    pitch: 60, 
+                                    speed: 0.8,
+                                    curve: 1
+                                });
                             }
                         }
-                        
                         steps.forEach(s => s.classList.remove('active'));
                         step.classList.add('active');
                     }
