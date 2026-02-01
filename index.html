@@ -10,6 +10,7 @@
         body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #1a1a1a; overflow-x: hidden; }
         #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; background-color: #1a1a1a; }
         
+        /* BARRA DE PROGRESO */
         #progress-bar {
             position: fixed; top: 0; left: 0; height: 5px; background: #b71c1c;
             width: 0%; z-index: 1000; transition: width 0.1s;
@@ -25,36 +26,28 @@
         .step.active { opacity: 1; }
 
         h1 { color: #b71c1c; font-size: 26px; margin-bottom: 20px; }
-        h2 { color: #b71c1c !important; font-size: 22px !important; margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 10px; text-transform: uppercase; }
         
-        .content-body img, .content-body iframe { width: 100% !important; border-radius: 4px; margin-top: 15px; border:none; min-height: 250px;}
+        /* Ajuste multimedia */
+        .content-body img, .content-body iframe { 
+            width: 100% !important; 
+            border-radius: 4px; 
+            margin-top: 10px; 
+            border:none; 
+            min-height: 250px;
+        }
+        
         .creditos { font-size: 12px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
         
-        .search-container {
-            position: fixed; top: 20px; right: 20px; z-index: 200;
-            background: white; padding: 10px; border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 280px;
-        }
-        .search-container label { display: block; font-size: 11px; color: #b71c1c; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
-        select { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc; font-size: 13px; background: white; }
-
         .nav-buttons { position: fixed; bottom: 30px; right: 30px; z-index: 100; display: flex; flex-direction: column; gap: 10px; }
         .nav-btn { background: #b71c1c; color: white; border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 
-        @media (max-width: 750px) { #features { width: 90%; margin: auto; } .search-container { width: 70%; top: 10px; right: 10px; } }
+        @media (max-width: 750px) { #features { width: 90%; margin: auto; } }
     </style>
 </head>
 <body>
 
 <div id="progress-bar"></div>
 <div id="map"></div>
-
-<div class="search-container">
-    <label>Índice de Lugares</label>
-    <select id="indice-lugares" onchange="irAlLugar(this.value)">
-        <option value="">Selecciona un destino...</option>
-    </select>
-</div>
 
 <div class="nav-buttons">
     <button class="nav-btn" onclick="navigate(-1)">▲</button>
@@ -67,16 +60,16 @@
         <p>Recorrido visual de Norte a Sur por los hitos de la memoria en España.</p>
     </section>
     <section class="step" id="intro2">
-        <p>Este mapa utiliza tecnología de satélite para documentar los espacios de memoria.</p>
+        <p>Este mapa interactivo utiliza tecnología de satélite para documentar la historia de España y el reconocimiento de sus lugares de memoria.</p>
     </section>
     <section class="step" id="intro3">
-        <p>Navega con el scroll o utiliza el selector superior para saltar a un punto concreto.</p>
+        <p>Utiliza el scroll o las flechas para navegar por el mapa.</p>
         <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
     </section>
 
     <section class="step" id="cierre-final">
-        <h2>Un inventario en constante evolución</h2>
-        <p>Estos son los lugares aprobados a fecha de 2026. El proceso continúa abierto.</p>
+        <h1>Un inventario en constante evolución</h1>
+        <p>Estos son los lugares aprobados a fecha de 2026. El inventario seguirá creciendo para garantizar la preservación de la memoria colectiva y el reconocimiento de las víctimas.</p>
         <div class="creditos">Proyecto Final - Instituto RTVE 2026</div>
     </section>
 </div>
@@ -84,10 +77,8 @@
 <script>
     let puntosOrdenados = [];
     let datosCargados = false;
-
-    // CLAVE DE MAPTILER REVISADA
     const maptilerKey = 'hwXj4DxXQkfeEuviuUmj';
-    
+
     const map = new maplibregl.Map({
         container: 'map',
         style: `https://api.maptiler.com/maps/satellite/style.json?key=${maptilerKey}`,
@@ -106,20 +97,12 @@
         }
     }
 
-    function irAlLugar(index) {
-        if (index === "") return;
-        const targetStep = parseInt(index) + 3;
-        const steps = document.querySelectorAll('.step');
-        if (steps[targetStep]) steps[targetStep].scrollIntoView({ behavior: 'smooth' });
-    }
-
     fetch('./datos.geojson')
         .then(response => response.json())
         .then(data => {
             if (datosCargados) return; 
             const container = document.getElementById('features');
             const target = document.getElementById('cierre-final');
-            const select = document.getElementById('indice-lugares');
             
             puntosOrdenados = data.features.sort((a, b) => b.geometry.coordinates[1] - a.geometry.coordinates[1]);
 
@@ -128,18 +111,11 @@
                 section.className = 'step';
                 section.id = 'puntos-' + i;
                 
-                // Extraer nombre limpio para el título dinámico
-                const rawName = feature.properties.name || "Lugar de Memoria";
-                const cleanName = rawName.replace(/<\/?[^>]+(>|$)/g, "").split('\n')[0].trim();
-                const description = feature.properties.description || feature.properties.name || "";
+                // Sin títulos rojos dinámicos: metemos todo el contenido de uMap directamente
+                const contenido = feature.properties.name || feature.properties.description || "";
 
-                section.innerHTML = `<h2>${cleanName}</h2><div class="content-body">${description}</div>`;
+                section.innerHTML = `<div class="content-body">${contenido}</div>`;
                 container.insertBefore(section, target);
-
-                const option = document.createElement('option');
-                option.value = i;
-                option.text = cleanName;
-                select.appendChild(option);
             });
             
             datosCargados = true;
@@ -161,7 +137,7 @@
                             if (puntosOrdenados[index]) {
                                 map.flyTo({ 
                                     center: puntosOrdenados[index].geometry.coordinates, 
-                                    zoom: 18.5, pitch: 50, speed: 1.0, essential: true
+                                    zoom: 18.5, pitch: 45, speed: 1.0, essential: true
                                 });
                             }
                         }
