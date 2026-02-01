@@ -9,6 +9,13 @@
     <style>
         body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #000; overflow-x: hidden; }
         #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; }
+        
+        /* BARRA DE PROGRESO */
+        #progress-bar {
+            position: fixed; top: 0; left: 0; height: 5px; background: #b71c1c;
+            width: 0%; z-index: 1000; transition: width 0.1s;
+        }
+
         #features { width: 38%; margin-left: 5%; padding-top: 10vh; padding-bottom: 80vh; pointer-events: none; }
         .step {
             padding: 30px; margin-bottom: 100vh; background: rgba(255, 255, 255, 0.95);
@@ -22,21 +29,139 @@
         .content-body img, .content-body iframe { width: 100% !important; border-radius: 4px; margin-top: 10px; border:none; min-height: 300px;}
         .creditos { font-size: 12px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
         
-        /* BUSCADOR / ÍNDICE */
         .search-container {
             position: fixed; top: 20px; right: 20px; z-index: 200;
             background: white; padding: 10px; border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 250px;
         }
-        select { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px; cursor: pointer; }
+        select { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px; }
 
         .nav-buttons { position: fixed; bottom: 30px; right: 30px; z-index: 100; display: flex; flex-direction: column; gap: 10px; }
         .nav-btn { background: #b71c1c; color: white; border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        @media (max-width: 750px) { #features { width: 90%; margin: auto; } .search-container { width: 80%; left: 10%; right: auto; } }
+
+        @media (max-width: 750px) { #features { width: 90%; margin: auto; } .search-container { width: 70%; top: 10px; right: 10px; } }
     </style>
 </head>
 <body>
 
+<div id="progress-bar"></div>
 <div id="map"></div>
 
-<div class
+<div class="search-container">
+    <select id="indice-lugares" onchange="irAlLugar(this.value)">
+        <option value="">Lista de lugares...</option>
+    </select>
+</div>
+
+<div class="nav-buttons">
+    <button class="nav-btn" title="Anterior" onclick="navigate(-1)">▲</button>
+    <button class="nav-btn" title="Siguiente" onclick="navigate(1)">▼</button>
+</div>
+
+<div id="features">
+    <section class="step active" id="intro1">
+        <h1>Inventario de Lugares de Memoria Democrática</h1>
+        <p>Recorrido visual por los espacios declarados por el Gobierno, ordenados geográficamente de Norte a Sur.</p>
+    </section>
+    <section class="step" id="intro2">
+        <p>Este mapa utiliza tecnología de satélite de alta resolución para explorar monumentos, prisiones y espacios de lucha democrática.</p>
+    </section>
+    <section class="step" id="intro3">
+        <p>Usa el scroll o el índice superior para navegar. Al llegar a cada punto, el mapa se posicionará automáticamente.</p>
+        <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
+    </section>
+
+    <section class="step" id="cierre-final">
+        <h2>Un inventario en constante evolución</h2>
+        <p>Estos son los lugares aprobados a fecha de 2026. La ley garantiza que este mapa seguirá creciendo conforme se tramiten nuevos expedientes.</p>
+        <div class="creditos">Proyecto Final - Especialidad Periodismo de Datos 2026</div>
+    </section>
+</div>
+
+<script>
+    let currentStep = 0;
+    let puntosOrdenados = [];
+    let datosCargados = false;
+
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://api.maptiler.com/maps/satellite/style.json?key=hwXj4DxXQkfeEuviuUmj',
+        center: [-3.7, 40.2],
+        zoom: 5.5,
+        pitch: 0,
+        interactive: false 
+    });
+
+    function navigate(direction) {
+        const steps = document.querySelectorAll('.step');
+        currentStep = Math.max(0, Math.min(steps.length - 1, currentStep + direction));
+        steps[currentStep].scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function irAlLugar(index) {
+        if (index === "") return;
+        const targetStep = parseInt(index) + 3;
+        document.querySelectorAll('.step')[targetStep].scrollIntoView({ behavior: 'smooth' });
+    }
+
+    fetch('./datos.geojson')
+        .then(response => response.json())
+        .then(data => {
+            if (datosCargados) return; 
+            const container = document.getElementById('features');
+            const target = document.getElementById('cierre-final');
+            const select = document.getElementById('indice-lugares');
+            
+            puntosOrdenados = data.features.sort((a, b) => b.geometry.coordinates[1] - a.geometry.coordinates[1]);
+
+            puntosOrdenados.forEach((feature, i) => {
+                const section = document.createElement('section');
+                section.className = 'step';
+                section.id = 'puntos-' + i;
+                section.innerHTML = `<h2>${feature.properties.name || "Lugar"}</h2><div class="content-body">${feature.properties.description || ""}</div>`;
+                container.insertBefore(section, target);
+
+                const option = document.createElement('option');
+                option.value = i;
+                option.text = (feature.properties.name || "Lugar").replace(/<\/?[^>]+(>|$)/g, "").substring(0, 35) + "...";
+                select.appendChild(option);
+            });
+            
+            datosCargados = true;
+
+            window.onscroll = () => {
+                // Actualizar barra de progreso
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById("progress-bar").style.width = scrolled + "%";
+
+                const steps = document.querySelectorAll('.step');
+                steps.forEach((step, i) => {
+                    const rect = step.getBoundingClientRect();
+                    if (rect.top > 0 && rect.top < window.innerHeight * 0.6) {
+                        currentStep = i;
+                        if (step.id.includes('intro') || step.id === 'cierre-final') {
+                            map.flyTo({ center: [-3.7, 40.2], zoom: 5.5, pitch: 0, speed: 1.2 });
+                        } else {
+                            const index = i - 3;
+                            if (puntosOrdenados[index]) {
+                                map.flyTo({ 
+                                    center: puntosOrdenados[index].geometry.coordinates, 
+                                    zoom: 18.8, 
+                                    pitch: 50, 
+                                    speed: 1.0, 
+                                    curve: 1.2,
+                                    essential: true
+                                });
+                            }
+                        }
+                        steps.forEach(s => s.classList.remove('active'));
+                        step.classList.add('active');
+                    }
+                });
+            };
+        });
+</script>
+</body>
+</html>
