@@ -7,88 +7,104 @@
     <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
     <style>
-        body { margin: 0; padding: 0; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; }
         
-        /* Ajuste de los popups para que sean legibles y responsivos */
+        /* CAJA NARRATIVA LATERAL */
+        #features {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 320px;
+            max-height: 90vh;
+            margin: 20px;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-radius: 12px;
+            z-index: 10;
+            overflow-y: auto;
+            border-top: 5px solid #b71c1c;
+        }
+
+        h1 { font-size: 22px; margin: 0 0 15px; color: #b71c1c; line-height: 1.2; }
+        p { font-size: 14.5px; line-height: 1.6; color: #333; margin-bottom: 15px; }
+        
+        .creditos { 
+            font-size: 12px; 
+            color: #666; 
+            border-top: 1px solid #ddd; 
+            padding-top: 10px; 
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        /* Estilo de las ventanas emergentes (popups) */
         .maplibregl-popup-content {
             max-width: 300px !important;
             padding: 20px;
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
             border-radius: 8px;
         }
+        
+        .maplibregl-popup-content img { width: 100%; border-radius: 4px; }
 
-        .maplibregl-popup-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-top: 10px;
+        /* Responsivo para móviles */
+        @media (max-width: 600px) {
+            #features { width: 85%; margin: 10px; padding: 15px; max-height: 40vh; }
         }
     </style>
 </head>
 <body>
+
+<div id="features">
+    <h1>Inventario de Lugares de Memoria Democrática</h1>
+    <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España y ha iniciado el proceso para declarar otros 18, entre los que hay fechas destacadas de la historia pero también espacios variopintos, como antiguas prisiones, palacios, un teatro, una mina, un puente, varias ciudades e incluso islas.</p>
+    <p>La intención del Gobierno con esta figura, recogida en la ley de Memoria Democrática de 2022, es reconocer y explicar la historia que hay detrás de espacios físicos o de patrimonios inmateriales vinculados a la represión franquista o a la lucha por la democracia.</p>
+    <p>En el siguiente mapa interactivo se encuentra información de los lugares que ya cuentan con este reconocimiento.</p>
+    <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
+</div>
 
 <div id="map"></div>
 
 <script>
     const map = new maplibregl.Map({
         container: 'map',
-        // Tu URL de MapTiler
         style: 'https://api.maptiler.com/maps/dataviz-v4/style.json?key=hwXj4DxXQkfeEuviuUmj', 
-        center: [-3.703, 40.416], // España central
-        zoom: 5.5,
-        pitch: 40 // Perspectiva 3D
+        center: [-3.7, 40.2], 
+        zoom: 5.4,
+        pitch: 45
     });
 
     map.on('load', () => {
-        // Cargamos el archivo que renombraste a datos.geojson
-        map.addSource('lugares', {
-            type: 'geojson',
-            data: './datos.geojson' 
-        });
+        map.addSource('puntos', { type: 'geojson', data: './datos.geojson' });
 
-        // Capa de los puntos de memoria
         map.addLayer({
-            id: 'puntos-capa',
+            id: 'capa-puntos',
             type: 'circle',
-            source: 'lugares',
+            source: 'puntos',
             paint: {
-                'circle-radius': 9,
+                'circle-radius': 10,
                 'circle-color': '#b71c1c',
                 'circle-stroke-width': 2,
                 'circle-stroke-color': '#ffffff'
             }
         });
 
-        // Al hacer clic en un punto
-        map.on('click', 'puntos-capa', (e) => {
+        map.on('click', 'capa-puntos', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
-            const properties = e.features[0].properties;
-            
-            // Recoge la descripción que venía de uMap
-            const descripcion = properties.description || properties.name || "Sin descripción";
+            const props = e.features[0].properties;
+            const content = props.description || props.name || "Sin datos";
 
-            // Vuelo suave al lugar
-            map.flyTo({
-                center: coordinates,
-                zoom: 11,
-                speed: 0.8
-            });
+            map.flyTo({ center: coordinates, zoom: 11, speed: 0.8 });
 
             new maplibregl.Popup()
                 .setLngLat(coordinates)
-                .setHTML(descripcion)
+                .setHTML(content)
                 .addTo(map);
         });
 
-        // Cambiar cursor al pasar por encima
-        map.on('mouseenter', 'puntos-capa', () => {
-            map.getCanvas().style.cursor = 'pointer';
-        });
-        map.on('mouseleave', 'puntos-capa', () => {
-            map.getCanvas().style.cursor = '';
-        });
+        map.on('mouseenter', 'capa-puntos', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.on('mouseleave', 'capa-puntos', () => { map.getCanvas().style.cursor = ''; });
     });
 </script>
 </body>
