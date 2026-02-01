@@ -7,38 +7,41 @@
     <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
     <style>
-        body { margin: 0; padding: 0; font-family: sans-serif; background: #f4f4f4; }
+        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #1a1a1a; }
         #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; }
         
-        /* Contenedor de las tarjetas de texto */
         #features {
-            width: 35%;
+            width: 40%;
             margin-left: 5%;
-            padding-top: 50vh; /* Para que la primera tarjeta empiece en el medio */
+            padding-top: 10vh;
             padding-bottom: 50vh;
         }
 
         .step {
-            padding: 40px;
-            margin-bottom: 80vh; /* Espacio entre puntos para que el scroll sea fluido */
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            opacity: 0.25; /* Las que no están activas se ven flojas */
+            padding: 30px 40px;
+            margin-bottom: 90vh;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            opacity: 0.1;
             transition: opacity 0.5s;
+            border-top: 6px solid #b71c1c;
         }
 
-        .step.active { opacity: 1; border-left: 5px solid #b71c1c; }
+        .step.active { opacity: 1; }
 
-        h1 { color: #b71c1c; font-size: 24px; }
-        h2 { color: #b71c1c; font-size: 18px; margin-top: 0; }
-        p { font-size: 15px; line-height: 1.6; color: #333; }
+        h1 { color: #b71c1c; font-size: 28px; line-height: 1.2; }
+        h2 { color: #b71c1c; font-size: 20px; margin-bottom: 10px; }
+        p { font-size: 16px; line-height: 1.7; color: #222; margin-bottom: 15px; }
         
-        .creditos { font-size: 12px; color: #777; margin-top: 20px; font-style: italic; }
+        .creditos { font-size: 13px; color: #666; margin-top: 20px; font-style: italic; border-top: 1px solid #ddd; padding-top: 10px; }
 
-        /* Ajuste para móviles */
+        /* Para que no se vea el código HTML que viene de uMap */
+        .desc-content { color: #333; font-weight: normal !important; }
+
         @media (max-width: 750px) {
-            #features { width: 90%; margin: auto; }
+            #features { width: 85%; margin: auto; }
+            .step { margin-bottom: 70vh; }
         }
     </style>
 </head>
@@ -46,14 +49,21 @@
 
 <div id="map"></div>
 <div id="features">
-    <section class="step active" id="portada">
+    <section class="step active" id="intro-1">
         <h1>Inventario de Lugares de Memoria Democrática</h1>
-        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España...</p>
-        <p><i>Sigue bajando con el ratón para comenzar el recorrido.</i></p>
-        <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
+        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España y ha iniciado el proceso para declarar otros 18, entre los que hay fechas destacadas de la historia pero también espacios variopintos, como antiguas prisiones, palacios, un teatro, una mina, un puente, varias ciudades e incluso islas.</p>
     </section>
 
-    </div>
+    <section class="step" id="intro-2">
+        <p>La intención del Gobierno con esta figura, recogida en la ley de Memoria Democrática de 2022, es reconocer y explicar la historia que hay detrás de espacios físicos o de patrimonios inmateriales vinculados a la represión franquista o a la lucha por la democracia.</p>
+    </section>
+
+    <section class="step" id="intro-3">
+        <p>En el siguiente mapa interactivo se encuentra información de los lugares que ya cuentan con este reconocimiento.</p>
+        <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
+        <p><strong><i>Sigue bajando para explorar los lugares...</i></strong></p>
+    </section>
+</div>
 
 <script>
     const map = new maplibregl.Map({
@@ -62,8 +72,7 @@
         center: [-3.7, 40.2],
         zoom: 5.5,
         pitch: 45,
-        bearing: 0,
-        interactive: false // Desactivamos interacción manual para que el scroll mande
+        interactive: false 
     });
 
     fetch('./datos.geojson')
@@ -71,36 +80,37 @@
         .then(data => {
             const container = document.getElementById('features');
             
-            // Creamos las tarjetas dinámicamente según tus puntos
             data.features.forEach((feature, i) => {
                 const section = document.createElement('section');
                 section.className = 'step';
-                section.id = 'step-' + i;
+                section.id = 'lugar-' + i;
                 
-                const title = document.createElement('h2');
-                title.innerText = feature.properties.name || "Punto de Memoria";
-                
-                const desc = document.createElement('div');
-                desc.innerHTML = feature.properties.description || "";
+                // Aquí limpiamos el texto para que no salga en negrita/roja de uMap
+                const rawText = feature.properties.name || "";
+                const cleanText = rawText.replace(/<\/?[^>]+(>|$)/g, ""); // Quita etiquetas HTML
 
-                section.appendChild(title);
-                section.appendChild(desc);
+                section.innerHTML = `
+                    <h2>Hito de Memoria</h2>
+                    <div class="desc-content"><p>${cleanText}</p></div>
+                `;
                 container.appendChild(section);
             });
 
-            // Lógica para detectar el scroll
             window.onscroll = () => {
                 const steps = document.querySelectorAll('.step');
                 steps.forEach((step, i) => {
                     const rect = step.getBoundingClientRect();
                     if (rect.top > 0 && rect.top < window.innerHeight * 0.5) {
-                        // Si es la portada, volvemos a vista general
-                        if (step.id === 'portada') {
-                            map.flyTo({ center: [-3.7, 40.2], zoom: 5.5, pitch: 45 });
+                        
+                        if (step.id.startsWith('intro')) {
+                            map.flyTo({ center: [-3.7, 40.2], zoom: 5.5, pitch: 45, bearing: 0 });
                         } else {
-                            // Si es un punto, volamos a sus coordenadas
-                            const coords = data.features[i-1].geometry.coordinates;
-                            map.flyTo({ center: coords, zoom: 14, pitch: 60, speed: 0.6 });
+                            // Ajustamos el índice porque hay 3 tarjetas de intro antes de los puntos
+                            const pointIndex = i - 3; 
+                            if (data.features[pointIndex]) {
+                                const coords = data.features[pointIndex].geometry.coordinates;
+                                map.flyTo({ center: coords, zoom: 14, pitch: 60, speed: 0.5, bearing: -10 });
+                            }
                         }
                         
                         steps.forEach(s => s.classList.remove('active'));
