@@ -2,110 +2,113 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <title>Inventario de Lugares de Memoria Democrática</title>
+    <title>StoryMap: Lugares de Memoria</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        body { margin: 0; padding: 0; font-family: sans-serif; background: #f4f4f4; }
+        #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; }
         
-        /* CAJA NARRATIVA LATERAL */
+        /* Contenedor de las tarjetas de texto */
         #features {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 320px;
-            max-height: 90vh;
-            margin: 20px;
-            padding: 25px;
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            border-radius: 12px;
-            z-index: 10;
-            overflow-y: auto;
-            border-top: 5px solid #b71c1c;
+            width: 35%;
+            margin-left: 5%;
+            padding-top: 50vh; /* Para que la primera tarjeta empiece en el medio */
+            padding-bottom: 50vh;
         }
 
-        h1 { font-size: 22px; margin: 0 0 15px; color: #b71c1c; line-height: 1.2; }
-        p { font-size: 14.5px; line-height: 1.6; color: #333; margin-bottom: 15px; }
-        
-        .creditos { 
-            font-size: 12px; 
-            color: #666; 
-            border-top: 1px solid #ddd; 
-            padding-top: 10px; 
-            margin-top: 20px;
-            font-style: italic;
-        }
-
-        /* Estilo de las ventanas emergentes (popups) */
-        .maplibregl-popup-content {
-            max-width: 300px !important;
-            padding: 20px;
+        .step {
+            padding: 40px;
+            margin-bottom: 80vh; /* Espacio entre puntos para que el scroll sea fluido */
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            opacity: 0.25; /* Las que no están activas se ven flojas */
+            transition: opacity 0.5s;
         }
-        
-        .maplibregl-popup-content img { width: 100%; border-radius: 4px; }
 
-        /* Responsivo para móviles */
-        @media (max-width: 600px) {
-            #features { width: 85%; margin: 10px; padding: 15px; max-height: 40vh; }
+        .step.active { opacity: 1; border-left: 5px solid #b71c1c; }
+
+        h1 { color: #b71c1c; font-size: 24px; }
+        h2 { color: #b71c1c; font-size: 18px; margin-top: 0; }
+        p { font-size: 15px; line-height: 1.6; color: #333; }
+        
+        .creditos { font-size: 12px; color: #777; margin-top: 20px; font-style: italic; }
+
+        /* Ajuste para móviles */
+        @media (max-width: 750px) {
+            #features { width: 90%; margin: auto; }
         }
     </style>
 </head>
 <body>
 
-<div id="features">
-    <h1>Inventario de Lugares de Memoria Democrática</h1>
-    <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España y ha iniciado el proceso para declarar otros 18, entre los que hay fechas destacadas de la historia pero también espacios variopintos, como antiguas prisiones, palacios, un teatro, una mina, un puente, varias ciudades e incluso islas.</p>
-    <p>La intención del Gobierno con esta figura, recogida en la ley de Memoria Democrática de 2022, es reconocer y explicar la historia que hay detrás de espacios físicos o de patrimonios inmateriales vinculados a la represión franquista o a la lucha por la democracia.</p>
-    <p>En el siguiente mapa interactivo se encuentra información de los lugares que ya cuentan con este reconocimiento.</p>
-    <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
-</div>
-
 <div id="map"></div>
+<div id="features">
+    <section class="step active" id="portada">
+        <h1>Inventario de Lugares de Memoria Democrática</h1>
+        <p>El Gobierno ha declarado una veintena de lugares de memoria democrática en España...</p>
+        <p><i>Sigue bajando con el ratón para comenzar el recorrido.</i></p>
+        <div class="creditos">Por: Laura Prieto Gallego para el Instituto RTVE</div>
+    </section>
+
+    </div>
 
 <script>
     const map = new maplibregl.Map({
         container: 'map',
-        style: 'https://api.maptiler.com/maps/dataviz-v4/style.json?key=hwXj4DxXQkfeEuviuUmj', 
-        center: [-3.7, 40.2], 
-        zoom: 5.4,
-        pitch: 45
+        style: 'https://api.maptiler.com/maps/dataviz-v4/style.json?key=hwXj4DxXQkfeEuviuUmj',
+        center: [-3.7, 40.2],
+        zoom: 5.5,
+        pitch: 45,
+        bearing: 0,
+        interactive: false // Desactivamos interacción manual para que el scroll mande
     });
 
-    map.on('load', () => {
-        map.addSource('puntos', { type: 'geojson', data: './datos.geojson' });
+    fetch('./datos.geojson')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('features');
+            
+            // Creamos las tarjetas dinámicamente según tus puntos
+            data.features.forEach((feature, i) => {
+                const section = document.createElement('section');
+                section.className = 'step';
+                section.id = 'step-' + i;
+                
+                const title = document.createElement('h2');
+                title.innerText = feature.properties.name || "Punto de Memoria";
+                
+                const desc = document.createElement('div');
+                desc.innerHTML = feature.properties.description || "";
 
-        map.addLayer({
-            id: 'capa-puntos',
-            type: 'circle',
-            source: 'puntos',
-            paint: {
-                'circle-radius': 10,
-                'circle-color': '#b71c1c',
-                'circle-stroke-width': 2,
-                'circle-stroke-color': '#ffffff'
-            }
+                section.appendChild(title);
+                section.appendChild(desc);
+                container.appendChild(section);
+            });
+
+            // Lógica para detectar el scroll
+            window.onscroll = () => {
+                const steps = document.querySelectorAll('.step');
+                steps.forEach((step, i) => {
+                    const rect = step.getBoundingClientRect();
+                    if (rect.top > 0 && rect.top < window.innerHeight * 0.5) {
+                        // Si es la portada, volvemos a vista general
+                        if (step.id === 'portada') {
+                            map.flyTo({ center: [-3.7, 40.2], zoom: 5.5, pitch: 45 });
+                        } else {
+                            // Si es un punto, volamos a sus coordenadas
+                            const coords = data.features[i-1].geometry.coordinates;
+                            map.flyTo({ center: coords, zoom: 14, pitch: 60, speed: 0.6 });
+                        }
+                        
+                        steps.forEach(s => s.classList.remove('active'));
+                        step.classList.add('active');
+                    }
+                });
+            };
         });
-
-        map.on('click', 'capa-puntos', (e) => {
-            const coordinates = e.features[0].geometry.coordinates.slice();
-            const props = e.features[0].properties;
-            const content = props.description || props.name || "Sin datos";
-
-            map.flyTo({ center: coordinates, zoom: 11, speed: 0.8 });
-
-            new maplibregl.Popup()
-                .setLngLat(coordinates)
-                .setHTML(content)
-                .addTo(map);
-        });
-
-        map.on('mouseenter', 'capa-puntos', () => { map.getCanvas().style.cursor = 'pointer'; });
-        map.on('mouseleave', 'capa-puntos', () => { map.getCanvas().style.cursor = ''; });
-    });
 </script>
 </body>
 </html>
