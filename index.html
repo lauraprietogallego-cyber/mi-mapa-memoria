@@ -7,10 +7,9 @@
     <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
     <style>
-        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #000; overflow-x: hidden; }
+        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #1a1a1a; overflow-x: hidden; }
         #map { position: fixed; top: 0; bottom: 0; width: 100%; z-index: -1; }
         
-        /* BARRA DE PROGRESO */
         #progress-bar {
             position: fixed; top: 0; left: 0; height: 5px; background: #b71c1c;
             width: 0%; z-index: 1000; transition: width 0.1s;
@@ -54,8 +53,8 @@
 </div>
 
 <div class="nav-buttons">
-    <button class="nav-btn" title="Anterior" onclick="navigate(-1)">▲</button>
-    <button class="nav-btn" title="Siguiente" onclick="navigate(1)">▼</button>
+    <button class="nav-btn" onclick="navigate(-1)">▲</button>
+    <button class="nav-btn" onclick="navigate(1)">▼</button>
 </div>
 
 <div id="features">
@@ -85,11 +84,17 @@
 
     const map = new maplibregl.Map({
         container: 'map',
+        // Asegúrate de que esta URL no tenga espacios raros al final
         style: 'https://api.maptiler.com/maps/satellite/style.json?key=hwXj4DxXQkfeEuviuUmj',
         center: [-3.7, 40.2],
         zoom: 5.5,
         pitch: 0,
         interactive: false 
+    });
+
+    // Función para manejar errores de carga del estilo
+    map.on('error', function() {
+        console.warn("Reintentando cargar el mapa...");
     });
 
     function navigate(direction) {
@@ -101,7 +106,8 @@
     function irAlLugar(index) {
         if (index === "") return;
         const targetStep = parseInt(index) + 3;
-        document.querySelectorAll('.step')[targetStep].scrollIntoView({ behavior: 'smooth' });
+        const targetElement = document.querySelectorAll('.step')[targetStep];
+        if (targetElement) targetElement.scrollIntoView({ behavior: 'smooth' });
     }
 
     fetch('./datos.geojson')
@@ -112,25 +118,29 @@
             const target = document.getElementById('cierre-final');
             const select = document.getElementById('indice-lugares');
             
-            puntosOrdenados = data.features.sort((a, b) => b.geometry.coordinates[1] - a.geometry.coordinates[1]);
+            puntosOrdenados = data.features.sort((a, b) => {
+                return b.geometry.coordinates[1] - a.geometry.coordinates[1];
+            });
 
             puntosOrdenados.forEach((feature, i) => {
                 const section = document.createElement('section');
                 section.className = 'step';
                 section.id = 'puntos-' + i;
-                section.innerHTML = `<h2>${feature.properties.name || "Lugar"}</h2><div class="content-body">${feature.properties.description || ""}</div>`;
+                const titulo = (feature.properties.name || "Lugar").replace(/<\/?[^>]+(>|$)/g, "");
+                const contenido = feature.properties.description || feature.properties.name || "";
+
+                section.innerHTML = `<h2>${titulo}</h2><div class="content-body">${contenido}</div>`;
                 container.insertBefore(section, target);
 
                 const option = document.createElement('option');
                 option.value = i;
-                option.text = (feature.properties.name || "Lugar").replace(/<\/?[^>]+(>|$)/g, "").substring(0, 35) + "...";
+                option.text = titulo.substring(0, 35) + "...";
                 select.appendChild(option);
             });
             
             datosCargados = true;
 
             window.onscroll = () => {
-                // Actualizar barra de progreso
                 const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                 const scrolled = (winScroll / height) * 100;
@@ -148,10 +158,9 @@
                             if (puntosOrdenados[index]) {
                                 map.flyTo({ 
                                     center: puntosOrdenados[index].geometry.coordinates, 
-                                    zoom: 18.8, 
+                                    zoom: 18.5, 
                                     pitch: 50, 
                                     speed: 1.0, 
-                                    curve: 1.2,
                                     essential: true
                                 });
                             }
