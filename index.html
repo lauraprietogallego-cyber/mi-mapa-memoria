@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Inventario de Lugares de Memoria Democrática</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        
+        /* Ajuste de los popups para que sean legibles y responsivos */
+        .maplibregl-popup-content {
+            max-width: 300px !important;
+            padding: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            border-radius: 8px;
+        }
+
+        .maplibregl-popup-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    const map = new maplibregl.Map({
+        container: 'map',
+        // Tu URL de MapTiler
+        style: 'https://api.maptiler.com/maps/dataviz-v4/style.json?key=hwXj4DxXQkfeEuviuUmj', 
+        center: [-3.703, 40.416], // España central
+        zoom: 5.5,
+        pitch: 40 // Perspectiva 3D
+    });
+
+    map.on('load', () => {
+        // Cargamos el archivo que renombraste a datos.geojson
+        map.addSource('lugares', {
+            type: 'geojson',
+            data: './datos.geojson' 
+        });
+
+        // Capa de los puntos de memoria
+        map.addLayer({
+            id: 'puntos-capa',
+            type: 'circle',
+            source: 'lugares',
+            paint: {
+                'circle-radius': 9,
+                'circle-color': '#b71c1c',
+                'circle-stroke-width': 2,
+                'circle-stroke-color': '#ffffff'
+            }
+        });
+
+        // Al hacer clic en un punto
+        map.on('click', 'puntos-capa', (e) => {
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const properties = e.features[0].properties;
+            
+            // Recoge la descripción que venía de uMap
+            const descripcion = properties.description || properties.name || "Sin descripción";
+
+            // Vuelo suave al lugar
+            map.flyTo({
+                center: coordinates,
+                zoom: 11,
+                speed: 0.8
+            });
+
+            new maplibregl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(descripcion)
+                .addTo(map);
+        });
+
+        // Cambiar cursor al pasar por encima
+        map.on('mouseenter', 'puntos-capa', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'puntos-capa', () => {
+            map.getCanvas().style.cursor = '';
+        });
+    });
+</script>
+</body>
+</html>
