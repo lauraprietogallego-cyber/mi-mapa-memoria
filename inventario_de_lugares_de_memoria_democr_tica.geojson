@@ -1,0 +1,987 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6886008,
+          40.4069749
+        ]
+      },
+      "properties": {
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-04-21",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El día 8 de marzo fue declarado como el “Día Internacional de la Mujer” en 1975 por la ONU, en recuerdo a la primera gran manifestación de mujeres, en Nueva York, en 1857. Las obreras del textil fueron duramente reprimidas y hasta 120 de ellas fallecieron. \n{{{https://flo.uri.sh/visualisation/1505223/embed?auto=1}}}\n<BR> <BR> Con la recuperación de la democracia, el movimiento feminista volvió a coger impulso.  Así, el 8 de marzo de 1978 se autorizó la primera manifestación feminista en España bajo el lema “Por un puesto de trabajo sin discriminación”. Desde entonces, cada año miles de mujeres se han dado cita consiguiendo importantes avances en la lucha feminista. \n\n<br> <br> **“Si nosotras paramos, se para el mundo”**\n\n<iframe src=\"https://www.google.com/maps/d/embed?mid=1Xa68DsjWHm_6ljUxaEvv7h9ypHaWxbw&ehbc=2E312F\" width=\"640\" height=\"480\"></iframe>\nLa manifestación y huelga de 2018 se recuerda como histórica y sin precedentes. Las españolas se situaron como referentes mundiales, con una asistencia masiva en decenas de ciudades.\n",
+        "name": "<h3>8 DE MARZO: DÍA INTERNACIONAL DE LA MUJER</h3>  <p>El día 8 de marzo fue declarado como el “Día Internacional de la Mujer” en 1975 por la ONU, en recuerdo a la primera gran manifestación de mujeres, en Nueva York, en 1857. Las obreras del textil fueron duramente reprimidas y hasta 120 de ellas fallecieron.</p>  <iframe src=\"https://flo.uri.sh/visualisation/1505223/embed?auto=1\"          frameborder=\"0\"          scrolling=\"no\"          style=\"width:100%; height:400px; margin: 0; padding: 0;\"> </iframe>  <p>Con la recuperación de la democracia, el movimiento feminista volvió a coger impulso. Así, el 8 de marzo de 1978 se autorizó la primera manifestación feminista en España bajo el lema “Por un puesto de trabajo sin discriminación”. Desde entonces, cada año miles de mujeres se han dado cita consiguiendo importantes avances en la lucha feminista.</p>  <h4 style=\"color: #555; border-left: 4px solid #884da7; padding-left: 10px; margin: 20px 0;\">“Si nosotras paramos, se para el mundo”</h4>  <p>La manifestación y huelga de 2018 se recuerda como histórica y sin precedentes. Las españolas se situaron como referentes mundiales, con una asistencia masiva en decenas de ciudades.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Infografía: Flourish</p>"
+      },
+      "id": "MDDCm"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4881708,
+          38.3436365
+        ]
+      },
+      "properties": {
+        "extent": [
+          -0.656695,
+          38.5370661,
+          -0.3750868,
+          38.1604664
+        ],
+        "name": "<h3>ALICANTE: MEMORIA, REPRESIÓN Y EXILIO</h3>  <p>La ciudad de Alicante está vinculada estrechamente a la Memoria Democrática de España a través de tres episodios especialmente significativos: el bombardeo sobre el Mercado Central el 25 de mayo de 1938 y el dramático exilio a través del puerto de la ciudad, así como la tumba de Miguel Hernández en el cementerio de Alicante.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/d/d3/Tumba_de_Miguel_Hern%C3%A1ndez_en_el_cementerio_de_Alicante%2C_Espa%C3%B1a.jpg\"         alt=\"Tumba de Miguel Hernández en Alicante\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Estos hitos constituyen, por sí solos, hechos de una singular relevancia por su repercusión en la memoria colectiva, vinculada a la represión y la violencia sobre la población como consecuencia de la resistencia al golpe de Estado de julio de 1936, la Guerra y la Dictadura, así como al exilio.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-11-22",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "La ciudad de Alicante está vinculada estrechamente a la Memoria Democrática de España a través de tres episodios especialmente significativos: el bombardeo sobre el Mercado Central el 25 de mayo de 1938 y el dramático exilio a través del puerto de la ciudad, así como la tumba de Miguel Hernández en el cementerio de Alicante. \n\n{{https://upload.wikimedia.org/wikipedia/commons/d/d3/Tumba_de_Miguel_Hern%C3%A1ndez_en_el_cementerio_de_Alicante%2C_Espa%C3%B1a.jpg}}\n\nEstos hitos constituyen, por sí solos, hechos de una singular relevancia por su repercusión en la memoria colectiva, vinculada a la represión y la violencia sobre la población como consecuencia de la resistencia al golpe de Estado de julio de 1936, la Guerra y la Dictadura, así como al exilio. "
+      },
+      "id": "pvXBj"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7546566101126166,
+          40.38120645
+        ]
+      },
+      "properties": {
+        "extent": [
+          -3.7575924,
+          40.3833092,
+          -3.7521846,
+          40.3787177
+        ],
+        "name": "<h3>ANTIGUA CÁRCEL DE CARABANCHEL</h3>  <p>La cárcel de Carabanchel estuvo en activo más de medio siglo. En 1998 cerró sus puertas definitivamente. Además de los presos comunes, la cárcel albergó a numerosos presos políticos y presos sociales (homosexuales en su mayor parte) durante la dictadura franquista: Marcelino Camacho, Nicolás Redondo, Nicolás Sartorius, Ramón Tamames, Enrique Múgica, Miguel Boyer, Fernando Sánchez-Dragó, Miguel Gila, Fernando Savater, Fernando Arrabal…</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/C%C3%A1rcel_de_Carabanchel%2C_c%C3%BApula.jpg/1280px-C%C3%A1rcel_de_Carabanchel%2C_c%C3%BApula.jpg\"         alt=\"Cúpula de la Cárcel de Carabanchel\"         style=\"max-width:100%; height:auto;\"> </p>  <p>El abandono, el vandalismo, el paso del tiempo y las ocupaciones hicieron que la antigua cárcel de Carabanchel se convirtiera en el espacio más degradado del distrito y el foco de problemas sociales y de seguridad. El Ministerio del Interior acabó derribándola pese a la petición de algunos vecinos que querían que se conservara su cúpula.</p>  <p>   <img src=\"https://diario.madrid.es/wp-content/uploads/2024/10/PU-Carcel-de-Carabanchel-planta-scaled.jpg\"         alt=\"Plano de la planta de la Cárcel de Carabanchel\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Actualmente, se ha proyectado la urbanización de los terrenos: \"El ámbito, de 172.143 m2, contará con unas 600 nuevas viviendas, de las que un 30 % serán protegidas\".</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia / Diario de Madrid; Imagen: Wikipedia / Ayuntamiento de Madrid</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-10-24",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "La cárcel de Carabanchel estuvo en activo más de medio siglo. En 1998 cerró sus puertas definitivamente\n\nAdemás de los presos comunes, la cárcel albergó a numerosos presos políticos y presos sociales (homosexuales en su mayor parte) durante la dictadura franquista: Marcelino Camacho, Nicolás Redondo, Nicolás Sartorius, Ramón Tamames, Enrique Múgica, Miguel Boyer, Fernando Sánchez-Dragó, Miguel Gila, Fernando Savater, Fernando Arrabal…\n\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/C%C3%A1rcel_de_Carabanchel%2C_c%C3%BApula.jpg/1280px-C%C3%A1rcel_de_Carabanchel%2C_c%C3%BApula.jpg}}\n\nEl abandono, el vandalismo, el paso del tiempo y las ocupaciones hicieron que la antigua cárcel de Carabanchel se convirtiera en el espacio más degradado del distrito y el foco de problemas sociales y de seguridad. El Ministerio del Interior acabó derribándola pese a la petición de algunos vecinos que querían que se conservara su cúpula.\n{{https://diario.madrid.es/wp-content/uploads/2024/10/PU-Carcel-de-Carabanchel-planta-scaled.jpg}}\nActualmente, se ha proyectado la urbanización de los terrenos: \"El ámbito, de 172.143 m2, contará con unas 600 nuevas viviendas, de las que un 30 % serán protegidas\". "
+      },
+      "id": "R2yuH"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3716020092046115,
+          43.2719915
+        ]
+      },
+      "properties": {
+        "extent": [
+          -6.3717383,
+          43.2721112,
+          -6.3714683,
+          43.2719334
+        ],
+        "name": "<h3>CASA NATAL DEL GENERAL RIEGO</h3><p>Rafael del Riego es una figura clave en la historia democrática española. En 1820, encabezó el primer pronunciamiento militar exitoso para obligar al rey Fernando VII a jurar la Constitución de 1812, dando inicio al Trienio Liberal. Por primera vez, en España se reconocía la soberanía nacional y la división de poderes.</p>  <br> <br>  <p>Riego se convirtió en un mártir de la libertad tras ser ejecutado en 1823, con la restauración del régimen absolutista. El Himno de Riego, compuesto en su honor, fue el himno oficial de la Segunda República.</p>  <br> <br> <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "Fecha declaración": "2024-07-20",
+        "descripcion": "\n"
+      },
+      "id": "IKU42"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6415895506329115,
+          40.42045175
+        ]
+      },
+      "properties": {
+        "extent": [
+          -3.6498304,
+          40.4259266,
+          -3.6325373,
+          40.41487
+        ],
+        "name": "<h3>CEMENTERIO DE LA ALMUDENA (MADRID)</h3>  <p>El cementerio de La Almudena, en Madrid, es un lugar de gran relevancia histórica y uno de los testigos del horror de la Guerra Civil y el Franquismo. En sus muros, decenas de personas fueron ejecutadas.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Las_Trece_Rosas.jpeg/500px-Las_Trece_Rosas.jpeg\"         alt=\"Las Trece Rosas\"         style=\"max-width:100%; height:auto;\"> </p>  <p>En concreto, durante la etapa comprendida entre el 16 de abril de 1939 y febrero de 1944 fueron asesinadas 2.936 personas de numerosas localidades españolas. Al menos 44 fueron ejecutadas a garrote vil y otras muchas fueron fusiladas en la tapia sur de la necrópolis. Sus cuerpos fueron enterrados en fosas comunes dentro del propio cementerio.</p>  <div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin: 10px 0;\">   <iframe src=\"https://www.youtube.com/embed/NB_4fAB03fI\"            style=\"position:absolute; top:0; left:0; width:100%; height:100%;\"            frameborder=\"0\"            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"            allowfullscreen>   </iframe> </div>  <p>Entre las víctimas se cuentan 80 mujeres, entre ellas las conocidas como “Las trece rosas”, fusiladas el 5 de agosto de 1939.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia; Video: YouTube</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-10-23",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El cementerio de La Almudena, en Madrid, es un lugar de gran relevancia histórica y uno de los testigos del horror de la Guerra Civil y el Franquismo. En sus muros, decenas de personas fueron ejecutadas. \n{{https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Las_Trece_Rosas.jpeg/500px-Las_Trece_Rosas.jpeg}}\nEn concreto, durante la etapa comprendida entre el 16 de abril de 1939 y febrero de 1944 fueron asesinadas 2.936 personas de numerosas localidades españolas. Al menos 44 fueron ejecutadas a garrote vil y otras muchas fueron fusiladas en la tapia sur de la necrópolis. Sus cuerpos fueron enterrados en fosas comunes dentro del propio cementerio. \n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/NB_4fAB03fI?si=vOaIGvxOAlRg27NJ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\nEntre las víctimas se cuentan 80 mujeres, entre ellas las conocidas como “Las trece rosas”, fusiladas el 5 de agosto de 1939."
+      },
+      "id": "Hrnwy"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1323230592463696,
+          37.992704
+        ]
+      },
+      "properties": {
+        "extent": [
+          -1.1328238,
+          37.9931593,
+          -1.1317309,
+          37.9919755
+        ],
+        "name": "<h3>CENTRO DE CULTURA CONTEMPORÁNEA «CÁRCEL VIEJA» (MURCIA)</h3>  <p>Durante el franquismo, la antigua prisión de Murcia fue uno de los principales centros de internamiento de republicanos en Murcia, junto a los conventos de Las Isabelas y Las Agustinas. En estos lugares, los detenidos esperaban juicios sumarísimos, llegando a superar los 3.000 presos en una instalación diseñada para 400, lo que derivaba en condiciones de vida terribles.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Carcel_Vieja_Murcia_04.jpg/500px-Carcel_Vieja_Murcia_04.jpg\"         alt=\"Antigua Cárcel Vieja de Murcia\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Tras la posguerra, la cárcel se normalizó como institución penitenciaria y se integró en el entorno urbano durante los años 60 y 70, con la expansión de la ciudad. Tras haber pasado por el abandono y por varios intentos de demolición en 1993, 1998 y 2006, finalmente, en 2022, el complejo fue transformado en Centro de Cultura Contemporánea «Cárcel Vieja».</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-06-20",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Durante el franquismo, la antigua prisión de Murcia fue uno de los principales centros de internamiento de republicanos en Murcia, junto a los conventos de Las Isabelas y Las Agustinas.\n\nEn estos lugares, los detenidos esperaban juicios sumarísimos, llegando a superar los 3.000 presos en una instalación diseñada para 400, lo que derivaba en condiciones de vida terribles.\n\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Carcel_Vieja_Murcia_04.jpg/500px-Carcel_Vieja_Murcia_04.jpg}}\n\nTras la posguerra, la cárcel se normalizó como institución penitenciaria y se integró en el entorno urbano durante los años 60 y 70, con la expansión de la ciudad.Tras haber pasado por el abandono y por varios intentos de demolición en 1993, 1998 y 2006,finalmente, en 2022, el complejo fue transformado en Centro de Cultura Contemporánea «Cárcel Vieja». \n"
+      },
+      "id": "kpClr"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6645720359913945,
+          40.96660115
+        ]
+      },
+      "properties": {
+        "extent": [
+          -5.6647426,
+          40.9668195,
+          -5.6644016,
+          40.9664128
+        ],
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2022-10-21",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El Centro Documental de la Memoria Histórica (CDMH), ubicado en la ciudad de Salamanca, \nalberga gran parte de la documentación histórica del siglo XX, desde la Segunda República a la Transición. <br> <br>\nSe puede acceder a todo tipo de material divulgativo en su página web, así como acudir a las actividades y exposiciones que se organizan periódicamente en este espacio. ",
+        "name": "<h3>CENTRO DOCUMENTAL DE LA MEMORIA HISTÓRICA (SALAMANCA)</h3>  <p>El Centro Documental de la Memoria Histórica (CDMH), ubicado en la ciudad de Salamanca, alberga gran parte de la documentación histórica del siglo XX, desde la Segunda República a la Transición.</p>  <p>Se puede acceder a todo tipo de material divulgativo en su página web, así como acudir a las actividades y exposiciones que se organizan periódicamente en este espacio.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática</p>"
+      },
+      "id": "l4AMu"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -14.007225,
+          28.527688
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "<h3>COLONIA AGRÍCOLA DE TEFÍA: REPRESIÓN DE LA DISIDENCIA SEXUAL</h3>  <p>Fue el principal centro de represión de las “disidencias sexuales” durante el franquismo. La Ley de Vagos y Maleantes recogía la homosexualidad como un estado peligroso y que, junto a “proxenetas”, “rufianes” o “mendigos profesionales” serían internados en “colonias agrícolas”.</p>  <br><br>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/8/87/LUN_3013.jpg\"         alt=\"Instalaciones de Tefía\"         style=\"width:100%; height:auto; border-radius: 4px;\"> </p>  <br><br>  <p>Los homosexuales debían ser internados en instituciones especiales y separadas de otros reclusos. No podían residir en determinadas zonas y estaban sujetos a vigilancia. Uno de estos centros fue el de Tefía, que albergó a más de un centenar de reclusos entre 1954 y 1966.</p>  <br><br>  <iframe width=\"100%\" height=\"300\" src=\"https://www.youtube.com/embed/9So2ecahdzk\" frameborder=\"0\" allowfullscreen></iframe>  <br><br>  <p>Los prisioneros pasaban entre uno y tres años internados. Su verdadera labor era convertir este terreno desértico de Fuerteventura en campo cultivable, con jornadas de sol a sol.</p>  <br><br>  <p>En la actualidad, funciona como albergue juvenil.</p>  <br><br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia / Archivo Histórico</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-07-01",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Fue el principal centro de represión de las “disidencias sexuales” durante el franquismo. La Ley de Vagos y Maleantes recogía la homosexualidad como un estado peligroso y que, junto a “proxenetas”, “rufianes” o “mendigos profesionales” serían internados en “colonias agrícolas”. \n\n{{https://upload.wikimedia.org/wikipedia/commons/8/87/LUN_3013.jpg}}\n\nLos homosexuales debían ser internados en instituciones especiales y separadas de otros reclusos. No podían residir en determinadas zonas y estaban sujetos a vigilancia. Uno de estos centros fue el de Tefía, que albergó a más de un centenar de reclusos entre 1954 y 1966. \n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9So2ecahdzk?si=6a-mLStAmRK5KT2V\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\nLos prisioneros pasaban entre uno y tres años internados. Su verdadera labor era convertir este terreno desértico de Fuerteventura en campo cultivable, con jornadas de sol a sol. \n\n<BR> <BR> En la actualidad, funciona como albergue juvenil.\n"
+      },
+      "id": "XQehA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7034386198258615,
+          40.4163403
+        ]
+      },
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 4098953,
+        "osm_key": "historic",
+        "osm_value": "building",
+        "type": "house",
+        "postcode": "28013",
+        "housenumber": "7",
+        "countrycode": "ES",
+        "name": "<h3>DIRECCIÓN GENERAL DE SEGURIDAD (ACTUAL SEDE DEL GOBIERNO AUTONÓMICO)</h3>  <p>La Dirección General de Seguridad (DGS) en Madrid desempeñó un papel central en la represión política y social durante varias etapas de la historia contemporánea de España, especialmente durante la dictadura franquista.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vista_lateral_de_la_Puerta_del_Sol_de_Madrid.jpg/500px-Vista_lateral_de_la_Puerta_del_Sol_de_Madrid.jpg\"         alt=\"Sede de la antigua DGS - Puerta del Sol\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Este edificio, ubicado en la Puerta del Sol y actual sede de la Comunidad de Madrid, se convirtió en un símbolo de la represión del régimen franquista, donde miles de personas fueron detenidas, interrogadas y sometidas a tortura por motivos políticos e ideológicos.</p>  <div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin: 10px 0;\">   <iframe src=\"https://www.youtube.com/embed/Dr6rNs_SIak\"            style=\"position:absolute; top:0; left:0; width:100%; height:100%;\"            frameborder=\"0\"            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"            allowfullscreen>   </iframe> </div>  <p>En sus dependencias se llevaron a cabo interrogatorios y torturas, y aunque nominalmente su función era asegurar el orden público, en la práctica actuaba como una policía política al servicio del régimen con facultades extraordinarias para actuar en defensa del Estado franquista. Cualquier forma de oposición, ya fuera intelectual, política o armada, era vigilada y perseguida por la DGS.</p>  <br>  <br> <p><strong>Más información:</strong> <a href=\"https://www.lasexta.com/programas/lasexta-clave/que-fue-direccion-general-seguridad-policia-franquista-que-formaba-parte-billy-nino_2024032766047f6a5e1b1f000114b2c0.html\" target=\"_blank\">La Sexta Clave: Qué fue la DGS</a></p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia; Video: YouTube</p>",
+        "country": "Spain",
+        "city": "Madrid",
+        "district": "Centro",
+        "locality": "Barrio de los Austrias",
+        "street": "Plaza Puerta del Sol",
+        "state": "Community of Madrid",
+        "extent": [
+          -3.7042068,
+          40.4166019,
+          -3.703323,
+          40.416079
+        ],
+        "_umap_options": {
+          "showLabel": false
+        }
+      },
+      "id": "VfdsY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4732748,
+          43.1842839
+        ]
+      },
+      "properties": {
+        "extent": [
+          -2.4996626,
+          43.2258879,
+          -2.4323883,
+          43.1640933
+        ],
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "Fecha declaración": "2025-04-14",
+        "descripcion": "La ciudad de Éibar fue el primer lugar de España donde se proclamó la Segunda República española el 14 de abril de 1931. El 5 de noviembre de 1933 fue la localidad donde, por primera vez, la mujer pudo ejercer su derecho a voto en España.\n\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/01_eibar.jpg/500px-01_eibar.jpg}}\n\nAdemás, durante la Guerra de España, y a lo largo de siete meses, se registraron 29 operaciones de bombardeo en Éibar, convirtiéndose en una de las once localidades más castigadas de Euskadi. \n\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Odonnelleko_zuloa_Eibarren.jpg/330px-Odonnelleko_zuloa_Eibarren.jpg}}\n\nTras la llegada de la Legión Cóndor en marzo de 1937 al frente vasco, Éibar se convirtió en uno de los puntos víctima de experimentos de guerra, junto con Guernica o Durango. ",
+        "name": "<h3>ÉIBAR</h3>  <p>La ciudad de Éibar fue el primer lugar de España donde se proclamó la Segunda República española el 14 de abril de 1931. El 5 de noviembre de 1933 fue la localidad donde, por primera vez, la mujer pudo ejercer su derecho a voto en España.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/01_eibar.jpg/500px-01_eibar.jpg\"         alt=\"Éibar República\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Además, durante la Guerra de España, y a lo largo de siete meses, se registraron 29 operaciones de bombardeo en Éibar, convirtiéndose en una de las once localidades más castigadas de Euskadi.</p>  <p>  <br>  <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Odonnelleko_zuloa_Eibarren.jpg/330px-Odonnelleko_zuloa_Eibarren.jpg\"         alt=\"Bombardeo Éibar\"         style=\"max-width:100%; height:auto;\"> </p> <br> <p>Tras la llegada de la Legión Cóndor en marzo de 1937 al frente vasco, Éibar se convirtió en uno de los puntos víctima de experimentos de guerra, junto con Guernica o Durango.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>"
+      },
+      "id": "MfdsR"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0960793,
+          36.7350193
+        ]
+      },
+      "properties": {
+        "name": "<h3>EL FARO DE TORRE DEL MAR: EL SACRIFICIO DE ANSELMO VILAR</h3>  <p>El Faro de Torre del Mar tuvo una importancia crucial en la Desbandá —la huida masiva de civiles desde Málaga hacia Almería durante la Guerra Civil en febrero de 1937—. Su luz funcionaba como un punto de referencia para la aviación y la marina franquista que atacaban a la columna de refugiados.</p>  <p>   <img src=\"https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_768/https://espacioandaluz.com/wp-content/uploads/2025/02/Diseno-sin-titulo-6.jpg\"         alt=\"Anselmo Vilar y el Faro de Torre del Mar\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <p>El farero <strong>Anselmo Vilar García</strong> decidió apagarlo durante dos noches (6 y 7 de febrero) para dificultar que los aviones y barcos localizaran la multitud que se agolpaba en la costa. Miles de personas se salvaron gracias a este gesto, que le costó la vida, ya que fue fusilado poco después junto a las tapias del cementerio de Vélez-Málaga.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia / Memoria Democrática; Imagen: Espacio Andaluz</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-02-07",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El Faro de Torre del Mar tuvo una importancia crucial en la Desbandá —la huida masiva de civiles desde Málaga hacia Almería durante la Guerra Civil en febrero de 1937— . Su luz funcionaba como un punto de referencia para la aviación y la marina franquista que atacaban a la columna de refugiados. {{https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_768/https://espacioandaluz.com/wp-content/uploads/2025/02/Diseno-sin-titulo-6.jpg}} El farero Anselmo Vilar García decidió apagarlo durante dos noches (6 y 7 de febrero) para dificultar que los aviones y barcos localizaran la multitud que se agolpaba en la costa. Miles de personas se salvaron gracias a este gesto, que le costó la vida, ya que fue fusilado poco después. "
+      },
+      "id": "KPyTP"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4415304,
+          36.7025885
+        ]
+      },
+      "properties": {
+        "name": "<h3>EL FUERTE DE CARCHUNA: PRISIÓN Y LIBERACIÓN</h3>  <p>Este fuerte tiene una relación directa con los trágicos sucesos de <strong>La Desbandá</strong>. La Desbandá se produjo en febrero de 1937, con el asesinato de alrededor de 5.000 personas que huían de la guerra por la N-340 entre Málaga y Almería.</p>  <p>   <img src=\"https://imagenes.elpais.com/resizer/v2/HSGJY2YNJ5EI3BBAVA53CFPBFM.jpg?auth=718907d09f941b9d56feb7c24bca9e6e3f4322985e84a7f40a97ad8f0a057d9d&width=1200\"         alt=\"Imagen histórica de La Desbandá\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <p>Poco después, el ejército golpista ocupa El Fuerte de Carchuna como prisión y campo de trabajo. En mayo de 1938 más de 300 prisioneros, procedentes en su mayoría del Frente Norte, concretamente de Asturias, estaban recluidos en él.</p>  <p>Tras una peculiar operación republicana, fueron liberados gracias, en parte, a combatientes de las Brigadas Internacionales.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia / Memoria Democrática; Imagen: El País</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-02-07",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Este fuerte tiene una relación directa con los trágicos sucesos de La Desbandá. La Desbandá se produce en febrero de 1937, con el asesinato de alrededor de 5.000 personas que huían de la guerra por la N-340 entre Málaga y Almería.\n{{https://imagenes.elpais.com/resizer/v2/HSGJY2YNJ5EI3BBAVA53CFPBFM.jpg?auth=718907d09f941b9d56feb7c24bca9e6e3f4322985e84a7f40a97ad8f0a057d9d&width=1200}}\nPoco después, el ejército golpista ocupa El Fuerte de Carnucha como prisión y campo de trabajo. En mayo de 1938 más de 300 prisioneros, procedentes en su mayoría, del Frente Norte, concretamente de Asturias, estaban recluidos en él. Tras una peculiar operación republicana, fueron liberados, gracias, en parte, a combatientes de las Brigadas Internacionales. "
+      },
+      "id": "E3gu8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -3.578979,
+          36.72407
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "<h3>EL PASO DEL RÍO GUADALFEO (LA DESBANDÁ)</h3>  <p>Durante la Desbandá de febrero de 1937, el río Guadalfeo se convirtió en un punto clave y trágico en la huida masiva de civiles que escapaban de los bombardeos y persecuciones tras la caída de Málaga durante la Guerra Civil Española.</p> <br><br> <p>Para los miles de refugiados procedentes de Málaga, la llegada al Guadalfeo significaba esperanza de alcanzar territorio más seguro, pero se encontraron con un río crecido por las lluvias y sin el puente principal, que había sido destruido, lo que obligó a muchas personas a intentar cruzarlo a nado o en condiciones extremadamente precarias.</p>  <br> <br><p>Muchos no lograron pasar y fueron arrastrados por la corriente hacia el mar, convirtiéndose este tramo en uno de los capítulos más mortales y recordados de la Desbandá.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "Fecha declaración": "2025-02-07",
+        "descripcion": "Durante la Desbandá de febrero de 1937, el río Guadalfeo se convirtió en un punto clave y trágico en la huida masiva de civiles que escapaban de los bombardeos y persecuciones tras la caída de Málaga durante la Guerra Civil Española. <br> <br>Para los miles de refugiados procedentes de Málaga, la llegada al Guadalfeo significaba esperanza de alcanzar territorio más seguro, pero se encontraron con un río crecido por las lluvias y sin el puente principal, que había sido destruido, lo que obligó a muchas personas a intentar cruzarlo a nado o en condiciones extremadamente precarias. Muchos no lograron pasar y fueron arrastrados por la corriente hacia el mar, convirtiéndose este tramo en uno de los capítulos más mortales y recordados de la Desbandá."
+      },
+      "id": "vy1Ib"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7644584697307977,
+          40.74911788090719
+        ]
+      },
+      "properties": {
+        "extent": [
+          -3.7684849,
+          40.7589608,
+          -3.7573529,
+          40.7413113
+        ],
+        "name": "<h3>FERROCARRIL MADRID-BURGOS: DESTACAMENTOS PENALES</h3>  <p>Esta línea ferroviaria fue construida gracias a los trabajos forzosos de cientos de prisioneros de guerra.</p>  <p>Los prisioneros eran recluidos en Destacamentos Penales situados a lo largo de las secciones del ferrocarril. Junto a ellos, muchas mujeres emigraron para estar cerca de sus maridos.</p>  <div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin: 10px 0;\">   <iframe src=\"https://www.youtube.com/embed/WyeIYf0Gtc0\"            style=\"position:absolute; top:0; left:0; width:100%; height:100%;\"            frameborder=\"0\"            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"            allowfullscreen>   </iframe> </div>  <p>Esta vía es solo un ejemplo de la expansión de los trabajos forzosos a cambio de reducciones de pena durante el franquismo: túneles, viaductos, carreteras o los famosos pantanos también esconden este oscuro pasado.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Video: YouTube</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2020-07-20",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Esta línea ferroviaria fue construida gracias a los trabajos forzosos de cientos de prisioneros de guerra. <br> <br> Los prisioneros eran recluidos en Destacamentos Penales situados a lo largo de las secciones del ferrocarril. Junto a ellos, muchas mujeres emigraron para estar cerca de sus maridos. <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/WyeIYf0Gtc0?si=u0KD_gG5jJqfxM94\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>Esta vía es solo un ejemplo de la expansión de los trabajos forzosos a cambio de reducciones de pena durante el franquismo: túneles, viaductos, carreteras o los famosos pantanos también esconden este oscuro pasado. "
+      },
+      "id": "f5DVZ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2329968,
+          43.4845713
+        ]
+      },
+      "properties": {
+        "extent": [
+          -8.3481026,
+          43.569302,
+          -8.1860636,
+          43.4531949
+        ],
+        "name": "<h3>FERROL</h3> <p>El 18 de julio de 1936, la ciudad de Ferrol, uno de los principales enclaves navales y militares del Estado, cayó en manos sublevadas, a pesar de la resistencia de marineros y trabajadores.</p>  <p> <img src=\"https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwNSG8PiHegglobBeUYVU8MoaQFGptj4mDDONLnAQ8NXaOHyNr0346vKUxcTDmi3NCl-rRqoZdEJHPo7KglFSWXzMHf2D0Zwni39dk2LgWBC46qovy4oIJrKybWTxLUP3RsPGeG5g=s680-w680-h510-rw\"      alt=\"Castillo de San Felipe\"      style=\"max-width:100%; height:auto;\"> </p>  <p>El castillo de San Felipe se convirtió en prisión militar y centro de fusilamientos, junto con el cementerio civil de Canido.</p>  <p>Entre 1936 y 1945 se documentan cerca de trescientas ejecuciones, cuyos cuerpos fueron enterrados en fosas comunes.</p><br> <br> <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false,
+          "labelInteractive": true
+        },
+        "Fecha declaración": "2025-11-07",
+        "Fuentes": "<p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "texto": "<p>El 18 de julio de 1936, la ciudad de Ferrol, uno de los principales enclaves navales y militares del Estado, cayó en manos sublevadas, a pesar de la resistencia de marineros y trabajadores.</p>  <p> <img src=\"https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwNSG8PiHegglobBeUYVU8MoaQFGptj4mDDONLnAQ8NXaOHyNr0346vKUxcTDmi3NCl-rRqoZdEJHPo7KglFSWXzMHf2D0Zwni39dk2LgWBC46qovy4oIJrKybWTxLUP3RsPGeG5g=s680-w680-h510-rw\"      alt=\"Castillo de San Felipe\"      style=\"max-width:100%; height:auto;\"> </p>  <p>El castillo de San Felipe se convirtió en prisión militar y centro de fusilamientos, junto con el cementerio civil de Canido.</p>  <p>Entre 1936 y 1945 se documentan cerca de trescientas ejecuciones, cuyos cuerpos fueron enterrados en fosas comunes.</p><br> <br> <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "descripcion": "<p>El 18 de julio de 1936, la ciudad de Ferrol, uno de los principales enclaves navales y militares del Estado, cayó en manos sublevadas, a pesar de la resistencia de marineros y trabajadores.</p>  <p> <img src=\"https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwNSG8PiHegglobBeUYVU8MoaQFGptj4mDDONLnAQ8NXaOHyNr0346vKUxcTDmi3NCl-rRqoZdEJHPo7KglFSWXzMHf2D0Zwni39dk2LgWBC46qovy4oIJrKybWTxLUP3RsPGeG5g=s680-w680-h510-rw\"      alt=\"Castillo de San Felipe\"      style=\"max-width:100%; height:auto;\"> </p>  <p>El castillo de San Felipe se convirtió en prisión militar y centro de fusilamientos, junto con el cementerio civil de Canido.</p>  <p>Entre 1936 y 1945 se documentan cerca de trescientas ejecuciones, cuyos cuerpos fueron enterrados en fosas comunes.</p><br> <br> <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>"
+      },
+      "id": "0mEpE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6658640225382713,
+          42.8566548
+        ]
+      },
+      "properties": {
+        "extent": [
+          -1.6677004,
+          42.8591877,
+          -1.6635528,
+          42.8542871
+        ],
+        "name": "<h3>FUERTE DE SAN CRISTÓBAL (PAMPLONA)</h3>  <p>El Fuerte de Alfonso XII o de San Cristóbal es una fortaleza militar situada en el monte Ezkaba o San Cristóbal.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Entrada_fuerte_San_Crist%C3%B3bal.JPG/1280px-Entrada_fuerte_San_Crist%C3%B3bal.JPG\"         alt=\"Entrada Fuerte San Cristóbal\"         style=\"max-width:100%; height:auto;\"> </p>  <p>En 1938, en el contexto de la Guerra Civil Española, cuando se utilizaba para el encarcelamiento de presos políticos (Navarra estaba bajo el control de las tropas alzadas) se produjo la fuga de 795 presos, de los cuales murieron 206, bien en las labores de persecución, o bien fueron ejecutados posteriormente.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "Fecha declaración": "2025-07-20",
+        "descripcion": "El Fuerte de Alfonso XII o de San Cristóbal es una fortaleza militar situada en el monte Ezkaba o San Cristóbal. \n{{https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Entrada_fuerte_San_Crist%C3%B3bal.JPG/1280px-Entrada_fuerte_San_Crist%C3%B3bal.JPG}}\n\nEn 1938, en el contexto de la Guerra Civil Española, cuando se utilizaba para el encarcelamiento de presos políticos (Navarra estaba bajo el control de las tropas alzadas) se produjo la fuga de 795 presos, de los cuales murieron 206, bien en las labores de persecución, o bien fueron ejecutados posteriormente."
+      },
+      "id": "2Womb"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6778593,
+          43.3143976
+        ]
+      },
+      "properties": {
+        "extent": [
+          -2.7176555,
+          43.3274464,
+          -2.6658945,
+          43.2954421
+        ],
+        "name": "<h3>GUERNICA</h3>  <p>Guernika fue protagonista de una de las matanzas más trágicas de la Guerra Civil, que queda para la posteridad plasmada en el famoso cuadro de Pablo Picasso.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/1937-05-26_LA_VANGUARDIA_1.jpg/500px-1937-05-26_LA_VANGUARDIA_1.jpg\"         alt=\"Portada La Vanguardia - Bombardeo de Guernica\"         style=\"max-width:100%; height:auto;\"> </p>  <p>El 26 de abril de 1937, durante la guerra civil española, la ciudad fue bombardeada por la Legión Cóndor, unidad aérea de la Luftwaffe al servicio de la causa franquista. Murieron 124 civiles y el 85% de la población fue destruida.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia / La Vanguardia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-04-13",
+        "descripcion": "Guernika fue protagonista de una de las matanzas más trágicas de la Guerra Civil, que queda para la posteridad plasmada en el famoso cuadro de Pablo Picasso. \n{{https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/1937-05-26_LA_VANGUARDIA_1.jpg/500px-1937-05-26_LA_VANGUARDIA_1.jpg}}\nEl 26 de abril de 1937, durante la guerra civil española, la ciudad fue bombardeada por la Legión Cóndor, unidad aérea de la Luftwaffe al servicio de la causa franquista. Murieron 124 civiles y el 85% de la población fue destruida.\n"
+      },
+      "id": "2rJ8L"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -2.668927,
+          42.855916
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "name": "<h3>IGLESIA DE SAN FRANCISCO DE ASÍS: LOS SUCESOS DEL 3 DE MARZO DE 1976</h3>  <p>Los sucesos del 3 de marzo de 1976 en la Iglesia de San Francisco de Asís (Vitoria) representan uno de los episodios más sangrientos de la Transición española. Aunque ocurrieron meses después de la muerte de Franco (noviembre de 1975), se sitúan en un periodo de gran inestabilidad. <br> <br></p>  <p>Durante una huelga general por mejoras laborales, la policía asaltó la iglesia donde se celebraba una asamblea masiva, utilizando gases lacrimógenos para forzar la salida de miles de personas y abriendo fuego real contra ellas. El resultado fue la muerte de cinco trabajadores y más de 150 heridos, muchos de ellos de bala.</p>  <div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin: 10px 0;\">   <iframe src=\"https://www.youtube.com/embed/V2zA6jncy1Q\"            style=\"position:absolute; top:0; left:0; width:100%; height:100%;\"            frameborder=\"0\"            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"            allowfullscreen>   </iframe> </div>  <p>La brutalidad de la actuación policial, bajo el mando del entonces ministro Manuel Fraga, evidenció que el reformismo controlado desde dentro del sistema era insuficiente y aceleró la unidad de la oposición democrática.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Video: YouTube</p>",
+        "Fecha declaración": "2025-02-25",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Los sucesos del 3 de marzo de 1976 en la Iglesia de San Francisco de Asís (Vitoria) representan uno de los episodios más sangrientos de la Transición española. Aunque ocurrieron meses después de la muerte de Franco (noviembre de 1975), se sitúan en un periodo de gran inestabilidad. <br> <br>\n\nDurante una huelga general por mejoras laborales, la policía asaltó la iglesia donde se celebraba una asamblea masiva, utilizando gases lacrimógenos para forzar la salida de miles de personas y abriendo fuego real contra ellas. El resultado fue la muerte de cinco trabajadores y más de 150 heridos, muchos de ellos de bala.\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/V2zA6jncy1Q?si=5RWlgs-r-yi92qCv\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\nLa brutalidad de la actuación policial, bajo el mando del entonces ministro Manuel Fraga, evidenció que el reformismo controlado desde dentro del sistema era insuficiente y aceleró la unidad de la oposición democrática."
+      },
+      "id": "g4RDI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -5.996143,
+          37.394115
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "<h3>IGLESIA DE SAN HERMENEGILDO (SEVILLA)</h3>  <p>La iglesia de San Hermenegildo tiene un alto valor para la memoria histórica y democrática por haber sido sede de las Cortes liberales entre el 23 de abril y el 11 de junio de 1823, en uno de los momentos más críticos del constitucionalismo español.</p>  <br><br>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/7/77/RI-51-0001266_Iglesia_Colegio_San_Hermenegildo_06.jpg\"         alt=\"Iglesia de San Hermenegildo\"         style=\"width:100%; height:auto; border-radius: 4px;\"> </p>  <br><br>  <p>Allí se reunieron los representantes del pueblo mientras el régimen liberal era amenazado por la invasión francesa de los Cien Mil Hijos de San Luis, promovida por la Santa Alianza para restaurar el absolutismo de Fernando VII. Este templo, con una larga historia de usos civiles y represivos, simboliza la resistencia institucional frente a la reacción absolutista y la defensa de los valores constitucionales.</p>  <br><br>  <p>Su posterior recuperación como sede del Parlamento de Andalucía entre 1985 y 1992 refuerza su significado como espacio ligado a la representación popular, el debate parlamentario y la continuidad histórica de la democracia en Andalucía y en España.</p>  <br><br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-20",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "La iglesia de San Hermenegildo tiene un alto valor para la memoria histórica y democrática por haber sido sede de las Cortes liberales entre el 23 de abril y el 11 de junio de 1823, en uno de los momentos más críticos del constitucionalismo español. \n{{https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/RI-51-0001266_Iglesia_Colegio_San_Hermenegildo_06.jpg/500px-RI-51-0001266_Iglesia_Colegio_San_Hermenegildo_06.jpg}}\nAllí se reunieron los representantes del pueblo mientras el régimen liberal era amenazado por la invasión francesa de los Cien Mil Hijos de San Luis, promovida por la Santa Alianza para restaurar el absolutismo de Fernando VII. \nEste templo, con una larga historia de usos civiles y represivos, simboliza la resistencia institucional frente a la reacción absolutista y la defensa de los valores constitucionales. <br> <br>\nSu posterior recuperación como sede del Parlamento de Andalucía entre 1985 y 1992 refuerza su significado como espacio ligado a la representación popular, el debate parlamentario y la continuidad histórica de la democracia en Andalucía y en España."
+      },
+      "id": "e0LEZ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6993281,
+          40.4124029
+        ]
+      },
+      "properties": {
+        "name": "<h3>LA MATANZA DE ATOCHA: CALLE ATOCHA 55</h3>  <p>El 24 de enero de 1977 se produjeron los asesinatos de los «abogados de Atocha», un atentado terrorista cometido por un comando de extrema derecha contra un bufete de letrados laboralistas de Comisiones Obreras y militantes del Partido Comunista de España (PCE), situado en la calle Atocha 55, en Madrid.</p>  <p>Los abogados asesinados fueron Enrique Valdelvira Ibáñez, Luis Javier Benavides Orgaz y Francisco Javier Sauquillo. También asesinaron al estudiante de Derecho Serafín Holgado de Antonio y al administrativo Ángel Rodríguez Leal. Además, en el atentado fueron gravemente heridos Miguel Sarabia Gil, Alejandro Ruiz-Huerta Carbonell, Luis Ramos Pardo y Lola González Ruiz.</p>  <div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin: 10px 0;\">   <iframe src=\"https://www.youtube.com/embed/HF0H14HJ7iU\"            style=\"position:absolute; top:0; left:0; width:100%; height:100%;\"            frameborder=\"0\"            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"            allowfullscreen>   </iframe> </div>  <p>Más de cien mil personas asistieron al entierro. Se trató de unas de las primeras manifestaciones multitudinarias tras la muerte del dictador Francisco Franco. A este acto le siguieron huelgas y muestras de solidaridad por todo el país.</p>  <p>   <img src=\"https://cdndigital.march.es/fedora/objects/linz:R-53731/datastreams/TN585/content\"         alt=\"Manifestación entierro Abogados de Atocha\"         style=\"max-width:100%; height:auto;\"> </p>  <p>El monumento «El abrazo», obra del artista Juan Genovés (Valencia, 1930-Madrid, 2020), se encuentra en la plaza de Antón Martín, en pleno corazón de Madrid. Esta escultura, inaugurada el 10 de junio de 2003, es un homenaje a los abogados laboralistas asesinados el 24 de enero de 1977 en su despacho de la calle Atocha número 55.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Fundación Juan March; Video: YouTube</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2022-10-19",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El 24 de enero de 1977 se produjeron los asesinatos de los «abogados de Atocha», un atentado terrorista cometido por un comando de extrema derecha contra un bufete de letrados laboralistas de Comisiones Obreras y militantes del Partido Comunista de España (PCE), situado en la calle Atocha 55, en Madrid. <BR><BR>\n\nLos abogados asesinados fueron Enrique Valdelvira Ibáñez, Luis Javier Benavides Orgaz y Francisco Javier Sauquillo. También asesinaron al estudiante de Derecho Serafín Holgado de Antonio y al administrativo Ángel Rodríguez Leal. Además, en el atentado fueron gravemente heridos Miguel Sarabia Gil, Alejandro Ruiz-Huerta Carbonell, Luis Ramos Pardo y Lola González Ruiz.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/HF0H14HJ7iU?si=1ZEEd639HNbxTjE5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\nMás de cien mil personas asistieron al entierro. Se trató de unas de las primeras manifestaciones multitudinarias tras la muerte del dictador Francisco Franco. A este acto le siguieron huelgas y muestras de solidaridad por todo el país.\n\n{{https://cdndigital.march.es/fedora/objects/linz:R-53731/datastreams/TN585/content}}\nEl monumento «El abrazo», obra del artista Juan Genovés (Valencia, 1930-Madrid, 2020), se encuentra en la plaza de Antón Martín, en pleno corazón de Madrid. Esta escultura, inaugurada el 10 de junio de 2003, es un homenaje a los abogados laboralistas asesinados el 24 de enero de 1977 en su despacho de la calle Atocha número 55.\n\n"
+      },
+      "id": "UgPvY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.937935205657288,
+          36.9859419
+        ]
+      },
+      "properties": {
+        "extent": [
+          -5.9385922,
+          36.9864198,
+          -5.9375989,
+          36.9855378
+        ],
+        "Fecha declaración": "2024-07-20",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El pronunciamiento de Rafael de Riego del 1 de enero de 1820 en Las Cabezas de San Juan fue un hecho clave para la memoria histórica y la construcción de la democracia en España, al reactivar la Constitución de Cádiz de 1812 y frenar el absolutismo de Fernando VII. \n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/IqarvkV3puI?si=UeE5oKl8LLzN5LV1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\nDesde Andalucía, Riego encabezó una sublevación liberal nacida del descontento de las tropas destinadas a América y, aunque inicialmente fracasó militarmente, su ejemplo desencadenó un movimiento constitucional que se extendió por todo el país y obligó al rey a jurar la Constitución, dando inicio al Trienio Liberal (1820-1823). \n{{https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Revoluci%C3%B3n_de_1820.svg/500px-Revoluci%C3%B3n_de_1820.svg.png}}\nRiego encarnó el compromiso con las libertades y los derechos ciudadanos, que defendió hasta su ejecución en 1823 tras la restauración absolutista. {{https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ejecuci%C3%B3n_del_general_Rafael_del_Riego_%28Pablo_B%C3%A9jar%29.jpg/500px-Ejecuci%C3%B3n_del_general_Rafael_del_Riego_%28Pablo_B%C3%A9jar%29.jpg}}Su figura y los reconocimientos otorgados a Las Cabezas de San Juan simbolizan el primer “grito de libertad” del siglo XIX español y la lucha temprana por los valores democráticos que forman parte esencial de la memoria histórica colectiva.",
+        "name": "<h3>LAS CABEZAS DE SAN JUAN: EL PRONUNCIAMIENTO DE RIEGO</h3>  <p>El pronunciamiento de Rafael de Riego del 1 de enero de 1820 en Las Cabezas de San Juan fue un hecho clave para la memoria histórica y la construcción de la democracia en España, al reactivar la Constitución de Cádiz de 1812 y frenar el absolutismo de Fernando VII.</p>  <br><br>  <iframe width=\"100%\" height=\"300\" src=\"https://www.youtube.com/embed/IqarvkV3puI\" frameborder=\"0\" allowfullscreen></iframe>  <br><br>  <p>Desde Andalucía, Riego encabezó una sublevación liberal nacida del descontento de las tropas destinadas a América y, aunque inicialmente fracasó militarmente, su ejemplo desencadenó un movimiento constitucional que se extendió por todo el país.</p>  <br><br>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/0/0f/Revoluci%C3%B3n_de_1820.svg\"         alt=\"Mapa Revolución\"         style=\"width:100%; height:auto;\"> </p>  <br><br>  <p>Riego encarnó el compromiso con las libertades y los derechos ciudadanos, que defendió hasta su ejecución en 1823 tras la restauración absolutista.</p>  <br><br>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/f/f8/Ejecuci%C3%B3n_del_general_Rafael_del_Riego_%28Pablo_B%C3%A9jar%29.jpg\"         alt=\"Ejecución de Riego\"         style=\"width:100%; height:auto;\"> </p>  <br><br>  <p>Texto: Ministerio de la Presidencia / Memoria Democrática; Imágenes: Wikipedia</p>"
+      },
+      "id": "w8ngT"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6914748,
+          40.4088389
+        ]
+      },
+      "properties": {
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-22",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "\nLas manifestaciones del 27 de febrero de 1981 fueron una reacción popular masiva y pacífica en toda España contra el intento de golpe de Estado del 23-F, consolidando la democracia; con más de un millón y medio de personas en Madrid y cientos de miles en otras ciudades, bajo lemas como \"Por la libertad, la democracia y la Constitución\", demostrando un rechazo unánime a la dictadura y afirmando la voluntad popular democrática.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QI6vKUW70sc?si=XUbmsM88FEu0J_it\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\nSe estima que en Madrid se reunieron un millón y medio de personas, y hubo concentraciones multitudinarias en Barcelona (250.000), Valencia (200.000), Sevilla (100.000) y muchas otras capitales de provincia.\n",
+        "name": "<h3>MANIFESTACIONES DEL 27 DE FEBRERO DE 1981</h3>  <p>Las manifestaciones del 27 de febrero de 1981 fueron una reacción popular masiva y pacífica en toda España contra el intento de golpe de Estado del 23-F, consolidando la democracia; con más de un millón y medio de personas en Madrid y cientos de miles en otras ciudades, bajo lemas como \"Por la libertad, la democracia y la Constitución\", demostrando un rechazo unánime a la dictadura y afirmando la voluntad popular democrática.</p>  <div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin: 10px 0;\">   <iframe src=\"https://www.youtube.com/embed/QI6vKUW70sc\"            style=\"position:absolute; top:0; left:0; width:100%; height:100%;\"            frameborder=\"0\"            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"            allowfullscreen>   </iframe> </div>  <p>Se estima que en Madrid se reunieron un millón y medio de personas, y hubo concentraciones multitudinarias en Barcelona (250.000), Valencia (200.000), Sevilla (100.000) y muchas otras capitales de provincia.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Video: YouTube</p>"
+      },
+      "id": "eiLmF"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8501511417800645,
+          36.75956353889457
+        ]
+      },
+      "properties": {
+        "extent": [
+          -3.8515887,
+          36.7678073,
+          -3.8492623,
+          36.7510443
+        ],
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "name": "<h3>MARO: TERCERA ETAPA DE \"LA DESBANDÁ\"</h3>  <p>El área de Maro formó parte de la ruta del horror conocida como \"La Desbandá\", donde la población civil fue masacrada en su huida de Málaga. Este tramo es parte de la conocida como tercera etapa del éxodo, situada entre Nerja y Almuñécar.</p>  <p>En este abrupto paisaje de los acantilados de Maro, la carretera N-340 se estrechaba, dejando a los miles de refugiados —ancianos, mujeres y niños en su mayoría— totalmente expuestos al fuego de los buques <i>Canarias</i>, <i>Baleares</i> y <i>Almirante Cervera</i>, así como a los ametrallamientos de la aviación.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática</p>",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "Fecha declaración": "0205-02-07",
+        "descripcion": "El área de Maro formó parte de la ruta del horror conocida como \"La Desbandá\", donde la población civil fue masacrada en su huida de Málaga.\nForma parte de la conocida como tercera etapa, entre Néjar y Almuñécar. "
+      },
+      "id": "IjluT"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.666784783683797,
+          43.4851971
+        ]
+      },
+      "properties": {
+        "extent": [
+          -5.6684667,
+          43.4863617,
+          -5.6652686,
+          43.4839798
+        ],
+        "name": "<h3>MINA DE LA CAMOCHA (GIJÓN)</h3>  <p>La Mina de La Camocha es fundamental para entender la resistencia obrera durante el franquismo. Su mayor hito fue la huelga de 1957, considerada el \"kilómetro cero\" del resurgimiento del movimiento sindical en España tras la Guerra Civil.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/8/89/Lavadero_de_Mina_La_Camocha.jpg\"         alt=\"Lavadero de Mina La Camocha\"         style=\"max-width:100%; height:auto;\"> </p>  <p>De esta mina surgieron las primeras Comisiones Obreras, cuando los trabajadores decidieron organizarse al margen del sindicato vertical falangista para negociar directamente sus condiciones.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-06-26",
+        "Fuentes": "Texto: Ministerio de Política Territorial y Memoria Democrática. Imagen: Wikipedia.",
+        "descripcion": "La Mina de La Camocha (Gijón) es fundamental para entender la resistencia obrera durante el franquismo. \nSu mayor hito fue la huelga de 1957, considerada el \"kilómetro cero\" del resurgimiento del movimiento sindical en España tras la Guerra Civil. \n{{https://upload.wikimedia.org/wikipedia/commons/8/89/Lavadero_de_Mina_La_Camocha.jpg}}\nDe esta mina surgieron las primeras Comisiones Obreras, cuando los trabajadores decidieron organizarse al margen del sindicato vertical falangista para negociar directamente sus condiciones.\n"
+      },
+      "id": "8uub7"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.293152330877646,
+          36.53512365
+        ]
+      },
+      "properties": {
+        "extent": [
+          -6.2933531,
+          36.5353417,
+          -6.2929431,
+          36.5349333
+        ],
+        "name": "<h3>MONUMENTO A LA CONSTITUCIÓN DE 1812 (CÁDIZ)</h3>  <p>El monumento a la Constitución de 1812 es un monumento conmemorativo de España que conmemora el centenario de la Constitución de 1812 ubicado en la Plaza de España de Cádiz.</p>  <br><br>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/Monumento_a_la_Constituci%C3%B3n_de_1812%2C_C%C3%A1diz%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_80.JPG\"         alt=\"Monumento a las Cortes en Cádiz\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <br><br>  <p>   <i>\"Las Cortes generales y extraordinarias queriendo fixar por todos los medios posibles en la memoria de los españoles la feliz época de la promulgación de la Constitución política de la monarquía, decretan: que la plaza principal de todos los pueblos de las Españas, en la que se celebre ó se haya celebrado ya este acto solemne, sea denominada en lo sucesivo plaza de la Constitución, y que se exprese así en una lápida erigida en la misma al indicado objeto Madrid, España\".</i> </p>  <br><br>  <p>   <i>14 de agosto de 1812.</i> </p>  <br><br>  <p>Texto: Ministerio de la Presidencia / Cortes de Cádiz; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-22",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El monumento a la Constitución de 1812 es un monumento conmemorativo de España que conmemora el centenario de la Constitución de 1812 ubicado en la Plaza de España de Cádiz.\n{{https://upload.wikimedia.org/wikipedia/commons/a/a3/Monumento_a_la_Constituci%C3%B3n_de_1812%2C_C%C3%A1diz%2C_Espa%C3%B1a%2C_2015-12-08%2C_DD_80.JPG}}\n\n<br> *\"Las Cortes generales y extraordinarias queriendo fixar por todos los medios posibles en la memoria de los españoles la feliz época de la promulgación de la Constitución política de la monarquía, decretan*: *que la plaza principal de todos los pueblos de las Españas, en la que se celebre ó se haya celebrado ya este acto solemne, sea denominada en lo sucesivo plaza de la Constitución*, *y que se exprese así en una lápida erigida en la misma al indicado objeto Madrid, España*\". <br>  <br>*14 de agosto de 1812*."
+      },
+      "id": "zwIka"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.467285,
+          36.8403553
+        ]
+      },
+      "properties": {
+        "_umap_options": {
+          "iconClass": "Circle",
+          "iconUrl": "/uploads/pictogram/monument.svg",
+          "iconSize": 20,
+          "color": "Navy",
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "labelDirection": "auto",
+          "labelInteractive": true,
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-08",
+        "Fuentes": "Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática",
+        "name": "<h3>MONUMENTO A LOS COLORADOS (ALMERÍA)</h3>  <p>La Plaza de la Constitución de Almería alberga el monumento a los \"Coloraos\" (o Pingurucho), un grupo de 49 voluntarios que en agosto de 1824 desembarcó en la ciudad para derrocar el absolutismo. Vestidos con llamativas casacas rojas inglesas, estos liberales —entre los que figuraban combatientes franceses e irlandeses— buscaban restablecer las libertades de la Constitución de 1812.</p>  <p>Sin embargo, las tropas realistas cortaron su avance y, tras varios enfrentamientos, 22 de ellos fueron fusilados por la espalda el 24 de agosto.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Plaza_Constituci%C3%B3n_Almer%C3%ADa_2.jpg/500px-Plaza_Constituci%C3%B3n_Almer%C3%ADa_2.jpg\"         alt=\"Plaza de la Constitución de Almería\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <p>Con la llegada de la dictadura, el monumento original fue destruido, momento en el que se perdieron los restos de los mártires. Han sido encontrados en 2024 en el cementerio municipal, gracias a una investigación liderada por Carmen Ravassa Lao, presidenta de la Asociación Bicentenario de los Coloraos.</p>  <p>El actual obelisco se inauguró el 24 de agosto de 1988.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia / Asociación Bicentenario de los Coloraos; Imagen: Wikipedia</p>",
+        "descripcion": "La Plaza de la Constitución de Almería alberga el monumento a los \"Coloraos\" (o  Pingurucho), un grupo de 49 voluntarios que en agosto de 1824 desembarcó en la ciudad para derrocar el absolutismo. Vestidos con llamativas casacas rojas inglesas, estos liberales —entre los que figuraban combatientes franceses e irlandeses— buscaban restablecer las libertades de la Constitución de 1812. Sin embargo, las tropas realistas cortaron su avance y, tras varios enfrentamientos, 22 de ellos fueron fusilados por la espalda el 24 de agosto. \n{{https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Plaza_Constituci%C3%B3n_Almer%C3%ADa_2.jpg/500px-Plaza_Constituci%C3%B3n_Almer%C3%ADa_2.jpg}}\nCon la llegada de la dictadura, el monumento original fue destruido, momento en el que perdieron los restos de los mártires. Han sido encontrados en 2024 en el cementerio municipal, gracias a una investigación liderada por Carmen Ravassa Lao, presidenta de la Asociación Bicentenario de los Coloraos.\nEl actual obelisco se inauguró el 24 de agosto de 1988."
+      },
+      "id": "0SF0k"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5971511,
+          37.1722705
+        ]
+      },
+      "properties": {
+        "name": "<h3>MONUMENTO A MARIANA PINEDA</h3>  <p>Mariana Pineda fue una figura histórica española del siglo XIX, conocida por su compromiso con las ideas liberales en una época marcada por la represión absolutista. Nacida en Granada en 1804, se involucró activamente en movimientos que defendían la Constitución y las libertades civiles durante el reinado de Fernando VII. Su participación no se dio desde el campo de batalla, sino a través del apoyo logístico y simbólico a los liberales perseguidos, lo que la convirtió en un referente de resistencia política.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Monument_Mariana_Pineda_Plaza_Mariana_Pineda_-_Grenade_%28ES61%29_-_2023-04-26_-_3.jpg/500px-Monument_Mariana_Pineda_Plaza_Mariana_Pineda_-_Grenade_%28ES61%29_-_2023-04-26_-_3.jpg\"         alt=\"Monumento a Mariana Pineda en Granada\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <p>En 1831 fue acusada de conspiración al encontrarse en su casa una bandera bordada con lemas liberales, hecho que selló su destino. Mariana se negó a delatar a sus compañeros, manteniéndose firme en sus ideales hasta el final. Fue ejecutada por garrote vil a los 26 años, convirtiéndose en un símbolo de valentía, dignidad y lucha por la libertad.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Flag_of_Mariana_Pineda.svg/500px-Flag_of_Mariana_Pineda.svg.png\"         alt=\"Bandera de Mariana Pineda\"         style=\"max-width:100%; height:auto; border: 1px solid #ddd;\"> </p>  <p>Su figura ha sido recordada y reivindicada en la literatura y la cultura española, especialmente gracias a la obra <i>Mariana Pineda</i> de Federico García Lorca.</p>  <div style=\"font-style: italic; background-color: #fcf8f2; padding: 15px; border-left: 4px solid #d32f2f; color: #333; margin: 15px 0;\">   Granada triste está <br>   Porque Mariana Pineda <br>   A la horca va <br>   Porque Pedrosa y los suyos <br>   Sus verdugos son, <br>   Y esta ha sido su venganza <br>   Porque Mariana de Pineda <br>   su amor no le dio </div> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imágenes: Wikipedia</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-22",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Mariana Pineda fue una figura histórica española del siglo XIX, conocida por su compromiso con las ideas liberales en una época marcada por la represión absolutista. Nacida en Granada en 1804, se involucró activamente en movimientos que defendían la Constitución y las libertades civiles durante el reinado de Fernando VII. Su participación no se dio desde el campo de batalla, sino a través del apoyo logístico y simbólico a los liberales perseguidos, lo que la convirtió en un referente de resistencia política.\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Monument_Mariana_Pineda_Plaza_Mariana_Pineda_-_Grenade_%28ES61%29_-_2023-04-26_-_3.jpg/500px-Monument_Mariana_Pineda_Plaza_Mariana_Pineda_-_Grenade_%28ES61%29_-_2023-04-26_-_3.jpg}}\nEn 1831 fue acusada de conspiración al encontrarse en su casa una bandera bordada con lemas liberales, hecho que selló su destino. Mariana se negó a delatar a sus compañeros, manteniéndose firme en sus ideales hasta el final. Fue ejecutada por garrote vil a los 26 años, convirtiéndose en un símbolo de valentía, dignidad y lucha por la libertad. Su figura ha sido recordada y reivindicada en la literatura y la cultura española, especialmente gracias a la obra Mariana Pineda de Federico García Lorca.\n\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Flag_of_Mariana_Pineda.svg/500px-Flag_of_Mariana_Pineda.svg.png}}\n\n*Granada triste está* <br>\n*Porque Mariana Pineda* <br>\n*A la horca va* <br>\n*Porque Pedrosa y los suyos* <br>\n*Sus verdugos son,* <br>\n*Y esta ha sido su venganza* <br>\n*Porque Mariana de Pineda* <br>\n*su amor no le dio* "
+      },
+      "id": "wQTum"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4175672,
+          36.723327
+        ]
+      },
+      "properties": {
+        "name": "<h3>Monumento a Torrijos</h3><p>La Cruz de Torrijos en Málaga recuerda a quienes fueron fusilados en 1831 junto al general José María de Torrijos y Uriarte, ministro de la Guerra durante el Trienio Liberal (1820-1823). </p> <br> <br> <p>Tras años de abandono la cruz fue restaurada en 2018 a petición de la Asociación Torrijos, que cada 11 de diciembre deposita una corona de lugar en el monumento.</p> <br> <br> <p>Torrijos preparó el conocido como pronunciamiento de Torrijos desde su exilio en Inglaterra (1824-1830) con el apoyo del duque de Wellington y de los exiliados que habían luchado bajo sus órdenes en la Guerra de la Independencia española. El 30 de noviembre de 1831 partieron de Gibraltar en varias barcazas, pero pronto vieron que habían sido engañados, ya que a la altura del cabo de Calaburras, les esperaban, por lo que tuvieron que desembarcar en Fuengirola y huir hacia el interior. El resultado fue fatal.</p> <br> <br> <p>Fuente: Ministerio de Política Territorial y Memoria Democrática </br>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-20",
+        "Fuentes": "Ministerio de Política Territorial y Memoria Democrática",
+        "descripcion": ""
+      },
+      "id": "lJwKc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.448768452238806,
+          42.46582785
+        ]
+      },
+      "properties": {
+        "extent": [
+          -2.4490307,
+          42.4659673,
+          -2.4485168,
+          42.4657386
+        ],
+        "name": "<h3>MUSEO DE LA RIOJA: CASA-PALACIO DE ESPARTERO</h3>  <p>Baldomero Espartero encarna un símbolo heroico para los liberales españoles del siglo XIX por la defensa constante que hizo de la libertad y de la soberanía popular. Liberal convencido, fue partidario de una constitución que delimitara las atribuciones y las responsabilidades de todos los estamentos de la sociedad.</p>  <p>   <img src=\"https://nuevecuatrouno.com/wp-content/uploads/2022/05/museo-rioja.jpg\"         alt=\"Museo de La Rioja - Casa-Palacio de Espartero\"         style=\"max-width:100%; height:auto;\"> </p>  <p>La Casa Palacio es un homenaje a esta figura histórica -se trata del lugar donde decidió pasar sus últimos días, alejado de la política-. Además, actualmente alberga el Museo de La Rioja.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: NueveCuatroUno</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-20",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Baldomero Espartero encarna un símbolo heroico para los liberales españoles del siglo XIX por la defensa constante que hizo de la libertad y de la soberanía popular. Liberal convencido, fue partidario de una constitución que delimitara las atribuciones y las responsabilidades de todos los estamentos de la sociedad. {{https://nuevecuatrouno.com/wp-content/uploads/2022/05/museo-rioja.jpg}}\nLa Casa Palacio es un homenaje a esta figura histórica -se trata del lugar donde decidió pasar sus últimos días, alejado de la política-. Además, actualmente alberga el Museo de La Rioja. \n"
+      },
+      "id": "qkj02"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.766075434194585,
+          43.4692211
+        ]
+      },
+      "properties": {
+        "extent": [
+          -3.7668291,
+          43.4694162,
+          -3.7657382,
+          43.4690213
+        ],
+        "name": "<h3>PALACIO DE LA MAGDALENA (SANTANDER)</h3>  <p>Fue un campo de concentración durante la Guerra Civil, desde 1937 hasta 1939. Al terminar la guerra existían 188 campos de reclusión, siendo el de La Magdalena uno de los más importantes. Aunque su capacidad máxima era de 600 prisioneros, llegó a albergar más de 1.600.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/9/92/Peninsula_de_La_Magdalena.jpg\"         alt=\"Península de La Magdalena\"         style=\"max-width:100%; height:auto; margin-bottom: 10px;\"> </p>  <p>   <img src=\"https://static.eldiario.es/clip/3af31c1e-ecb0-40c8-b66b-01c64d48ee86_16-9-discover-aspect-ratio_default_0.webp\"         alt=\"Campo de concentración La Magdalena\"         style=\"max-width:100%; height:auto;\"> </p>  <p>La ubicación geográfica del palacio hacía de él un lugar idóneo para la reclusión: una península cerrada con accesos controlados, de la que solo era posible escapar a nado. Las condiciones de vida eran extremadamente duras: los presos sufrían hambre, frío, hacinamiento y enfermedades como el tifus, la sarna o la tuberculosis.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia / El Diario</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia y Biblioteca Nacional",
+        "Fecha declaración": "2025-11-04",
+        "descripcion": "Fue un campo de concentración durante la Guerra Civil, desde 1937 hasta 1939. Al terminar la guerra existían 188 campos de reclusión, siendo el de La Magdalena uno de los más importantes. Aunque su capacidad máxima era de 600 prisioneros, llegó a albergar más de 1.600.\n{{https://upload.wikimedia.org/wikipedia/commons/9/92/Peninsula_de_La_Magdalena.jpg}}\n{{https://static.eldiario.es/clip/3af31c1e-ecb0-40c8-b66b-01c64d48ee86_16-9-discover-aspect-ratio_default_0.webp}}\nLa ubicación geográfica del palacio hacía de él un lugar idóneo para la reclusión: una península cerrada con accesos controlados, de la que solo era posible escapar a nado. Las condiciones de vida eran extremadamente duras: los presos sufrían hambre, frío, hacinamiento y enfermedades como el tifus, la sarna o la tuberculosis."
+      },
+      "id": "CFqRd"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.683689669081958,
+          40.4061632
+        ]
+      },
+      "properties": {
+        "extent": [
+          -3.6841139,
+          40.4065835,
+          -3.6832967,
+          40.4058531
+        ],
+        "name": "<h3>PANTEÓN DE ESPAÑA</h3>  <p>El Panteón de España tiene como objetivo mantener el recuerdo y proyección de los representantes de la historia de la democracia española y de aquellas personas que hayan destacado por su labor en defensa de la convivencia democrática, la paz y los derechos humanos, así como el progreso de la ciencia o la cultura.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pante%C3%B3n_de_Hombres_Ilustres_%2835250034501%29.jpg/500px-Pante%C3%B3n_de_Hombres_Ilustres_%2835250034501%29.jpg\"         alt=\"Panteón de España\"         style=\"max-width:100%; height:auto;\"> </p>  <p>La idea del panteón nacional es característica de los regímenes constitucionales europeos desde la Revolución Francesa y se desarrolla a partir del ejemplo inglés de Westminster.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2022-10-21",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El Panteón de España tiene como objetivo mantener el recuerdo y proyección de los representantes de la historia de la democracia española y de aquellas personas que hayan destacado por su labor en defensa de la convivencia democrática, la paz y los derechos humanos, así como el progreso de la ciencia o la cultura.\n\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pante%C3%B3n_de_Hombres_Ilustres_%2835250034501%29.jpg/500px-Pante%C3%B3n_de_Hombres_Ilustres_%2835250034501%29.jpg}}\n\nLa idea del panteón nacional es característica de los regímenes constitucionales europeos desde la Revolución Francesa y se desarrolla a partir del ejemplo inglés de Westminster.\n"
+      },
+      "id": "GDugC"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3399939,
+          36.7130822
+        ]
+      },
+      "properties": {
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-02-07",
+        "Fuentes": "Texto: Ministerio de Política Territorial y Memoria Democrática. Imagen: Diario Sur.",
+        "descripcion": "Junto al Paseo de los Canadienses, que homenajea a la ayuda internacional recibida por la República. Este, que es uno de los primeros puntos que cruzó la Desbandá, se ha convertido en las últimas décadas en un lugar de homenaje y recuerdo. \n{{https://s3.ppllstatics.com/diariosur/www/multimedia/2025/02/09/IMG_1151-RkllmA7HANPLTMxqSmU70OO-1200x840@Diario%20Sur.jpg}}\nMás información: https://www.diariosur.es/malaga-capital/claveles-orilla-recuerdo-desbanda-aniversario-20250209135546-nt.html",
+        "name": "<h3>PASEO DE LOS CANADIENSES (MÁLAGA)</h3>  <p>Este lugar homenajea la ayuda internacional recibida por la República, especialmente la del médico canadiense <strong>Norman Bethune</strong> y su unidad de transfusión de sangre. Este es uno de los primeros puntos que cruzó la Desbandá en su salida de Málaga capital, y se ha convertido en las últimas décadas en un lugar de homenaje y recuerdo.</p>  <p>   <img src=\"https://s3.ppllstatics.com/diariosur/www/multimedia/2025/02/09/IMG_1151-RkllmA7HANPLTMxqSmU70OO-1200x840@Diario%20Sur.jpg\"         alt=\"Homenaje en el Paseo de los Canadienses\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <p>Cada aniversario, familiares y asociaciones se reúnen en esta orilla para depositar flores en recuerdo de las víctimas que iniciaron aquí su huida hacia Almería.</p>  <p><strong>Más información:</strong> <a href=\"https://www.diariosur.es/malaga-capital/claveles-orilla-recuerdo-desbanda-aniversario-20250209135546-nt.html\" target=\"_blank\">Claveles a la orilla en recuerdo de la Desbandá (Diario SUR)</a></p>  <br> <br>  <p>Texto: Ministerio de la Presidencia / Diario SUR; Imagen: Diario SUR</p>"
+      },
+      "id": "ZcS3X"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -4.297725,
+          36.712846
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "<h3>PEÑÓN DEL CUERVO</h3>  <p>En febrero de 1937, durante la masacre de la carretera Málaga-Almería (La Desbandá), miles de civiles se refugiaron en estos túneles. Fueron blanco de ataques de buques franquistas, incluyendo un obús que impactó en el primer túnel.</p>  <p>   <img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMwwQH0ePFhomJerElViGtTSPQjMbGdTipQ&s\"         alt=\"Túneles de la carretera de Almería\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <br> <br><p>Estos túneles representaron para muchos la única protección frente a los bombardeos de la aviación y los disparos desde el mar, convirtiéndose en refugios improvisados donde se agolpaban familias enteras en su huida hacia el este.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Archivo Histórico</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "Fecha declaración": "2025-02-07",
+        "descripcion": "En febrero de 1937, durante la masacre de la carretera Málaga-Almería (La Desbandá), miles de civiles se refugiaron en estos túneles. Fueron blanco de ataques de buques franquistas, incluyendo un obús que impactó en el primer túnel.\n{{https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMwwQH0ePFhomJerElViGtTSPQjMbGdTipQ&s}}"
+      },
+      "id": "kJNAw"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.78562265,
+          43.3497609
+        ]
+      },
+      "properties": {
+        "extent": [
+          -1.7858793,
+          43.3499687,
+          -1.785366,
+          43.3495531
+        ],
+        "name": "<h3>PUENTE AVENIDA (IRÚN)</h3>  <p>El Puente Avenida de Irún, conocido también como Puente Internacional, se inauguró en 1915, convirtiéndose en el primer paso internacional por carretera a través del que España se abría a Francia.</p>  <p>Su papel en la huida de civiles a Francia, como en la entrada de suministros a España, fue crucial en los primeros días de guerra.</p>  <p>   <img src=\"https://estaticosgn-cdn.deia.eus/clip/79172229-2a87-4e3c-80ba-e611e03de04e_16-9-aspect-ratio_default_0.jpg\"         alt=\"Puente Avenida de Irún\"         style=\"max-width:100%; height:auto;\"> </p>  <p>No tardó mucho en caer en manos golpistas, tras una intensa y sangrienta batalla. Miles de personas cruzaron de una orilla a otra huyendo de las bombas y la miseria.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Deia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2025-01-27",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "El Puente Avenida de Irún, conocido también como Puente Internacional, se inauguró en 1915, convirtiéndose en el primer paso internacional por carretera a través del que España se abría a Francia. <br> <br>Su papel en la huida de civiles a Francia, como en la entrada de suministros a España, fue crucial en los primeros días de guerra.\n\n{{https://estaticosgn-cdn.deia.eus/clip/79172229-2a87-4e3c-80ba-e611e03de04e_16-9-aspect-ratio_default_0.jpg}}\nNo tardó mucho en caer en manos golpistas, tras una intensa y sangrienta batalla. Miles de personas cruzaron de una orilla a otra huyendo de las bombas y la miseria."
+      },
+      "id": "Q753C"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.197657936759761,
+          36.466057500000005
+        ]
+      },
+      "properties": {
+        "extent": [
+          -6.1978681,
+          36.4661786,
+          -6.197448,
+          36.4659366
+        ],
+        "name": "<h3>REAL TEATRO DE LAS CORTES (SAN FERNANDO)</h3>  <p>El Real Teatro de las Cortes —llamado hasta el año 2001 Teatro de las Cortes y conocido antiguamente como Corral o Casa de Comedias— abrió sus puertas en 1804. Desde el 22 de septiembre de 1810, cuando se traslada a la Isla de León el Consejo de Regencia, hasta el 20 de febrero de 1811, el Gobierno de la Nación residió en la actual ciudad de San Fernando.</p>  <br>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Fachada_Real_Teatro_de_las_Cortes.JPG/500px-Fachada_Real_Teatro_de_las_Cortes.JPG\"         alt=\"Fachada del Real Teatro de las Cortes\"         style=\"max-width:100%; height:auto; border-radius: 4px;\"> </p>  <br>  <p>Las Cortes fueron convocadas para iniciar sus sesiones el 24 de septiembre de 1810, consagrándose en ellas los principios inspiradores de la Constitución de 1812. El Ingeniero de Marina Antonio Prat adecuó el coliseo para la ocasión: los diputados se situaron en dos hileras de asientos a pie de los palcos, mientras los pisos altos se reservaron para el público.</p>  <br> <br>   <p>Este lugar es de vital importancia para el constitucionalismo español. Tras años de abandono (periodo en el que, curiosamente, llegó a ser utilizado como bingo), fue rehabilitado e inaugurado en 1999. Sigue en activo, por lo que no pierda la oportunidad de consultar su cartelera.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "Fecha declaración": "2024-07-20",
+        "descripcion": "El Real Teatro de las Cortes - llamado hasta el año 2001 Teatro de las Cortes y conocido antiguamente como Corral o Casa de Comedias- abrió sus puertas en 1804.\nDesde el 22 de septiembre de 1810 en que se traslada a la Isla de León el Consejo de Regencia, hasta el 20 de febrero de 1811 que vuelve a Cádiz, el Gobierno de la Nación residió en la actual ciudad de San Fernando.\n \n{{https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Fachada_Real_Teatro_de_las_Cortes.JPG/500px-Fachada_Real_Teatro_de_las_Cortes.JPG}}\n\nLas Cortes fueron convocadas para iniciar sus sesiones el 24 de septiembre de 1810, a lo largo de las cuales fueron consagrándose los nuevos principios inspiradores de la Constitución de 1812. Después de la celebración de la Santa Misa el citado día 24 y tras el consiguiente juramento, la comitiva de diputados y autoridades desfilaron hacia el teatro Cómico de la villa donde comenzaron ese mismo día las sesiones de las Cortes Generales y Extraordinarias. El Teniente General Pedro González de Llamas fue nombrado aposentador de Cortes, y el Ingeniero de Marina Antonio Prat se encargó de los trabajos de adecentamiento y adecuación del coliseo para la ocasión. Quedó finalmente configurado en un patio con una mesa para el presidente y secretarios, mientras que los diputados se emplazaron en dos hileras de asientos a pie de los palcos ocupados por el cuerpo diplomático y autoridades; los pisos altos se reservaron para el público en general.\n\n Este lugar es de considerable importancia para la historia de España y, sobre todo, para el constitucionalismo español, ya que en su interior se reunieron, entre el 24 de septiembre de 1810 hasta 20 de febrero de 1811, los diputados que redactaron la Constitución española de 1812. Tras años de abandono, fue rehabilitado e inaugurado en 1999, reconociéndose su valor histórico.\nSigue en activo, no pierda la oportunidad de echar un vistazo a su cartelera. llegó a ser un bingo."
+      },
+      "id": "EsSQq"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6702595,
+          40.3820858
+        ]
+      },
+      "properties": {
+        "name": "<h3>RESISTENCIA EN VALLECAS: PLAZA DE ROBERT CAPA</h3>  <p>Madrid fue un símbolo de la resistencia fascista, con lemas que han pasado a la historia, como el famoso “¡No pasarán!”. Durante años, la capital sufrió intensos bombardeos, gran parte en los actuales distritos de Vallecas o Tetuán.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/4/47/La_casa_que_fotografi%C3%B3_Robert_Capa_acoger%C3%A1_un_equipamiento_cultural_01.jpg\"         alt=\"Edificio fotografiado por Robert Capa en Peironcely 10\"         style=\"max-width:100%; height:auto;\"> </p>  <p>La conocida como Plaza de Robert Capa, así como la iglesia de San Carlos Borromeo y sus edificios aledaños, fueron objetivo de los ataques sublevados. Capa, como fotoperiodista, retrató la dureza de esos años en imágenes que han quedado para la posteridad.</p>  <p>La Iglesia de San Carlos también es símbolo de la supervivencia y solidaridad de las familias en estos barrios de infraviviendas durante el franquismo.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia / Robert Capa</p>",
+        "_umap_options": {
+          "popupTemplate": "Default",
+          "popupShape": "Large",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-07-23",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "Madrid fue un símbolo de la resistencia fascista, con lemas que han pasado a la historia, como el famoso “¡No pasarán!”. Durante años, la capital sufrió intensos bombardeos, gran parte en los actuales distritos de Vallecas o Tetuán. \n\n{{https://upload.wikimedia.org/wikipedia/commons/4/47/La_casa_que_fotografi%C3%B3_Robert_Capa_acoger%C3%A1_un_equipamiento_cultural_01.jpg}}\n\nLa conocida como Plaza de Robert Capa, así como la iglesia de San Carlos Borromeo y sus edificios aledaños, fueron objetivo de los ataques sublevados. Capa, como fotoperiodista, retrató la dureza de esos años en imágenes que han quedado para la posteridad. \n<br> <br>\nLa Iglesia de San Carlos también es símbolo de la supervivencia y solidaridad de las familias en estos barrios de infraviviendas durante el franquismo. \n"
+      },
+      "id": "O1YRM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2580138738008917,
+          41.1165431
+        ]
+      },
+      "properties": {
+        "extent": [
+          1.2578751,
+          41.1166787,
+          1.2581688,
+          41.1163517
+        ],
+        "name": "<h3>TORRE DEL PRETORIO: LA \"PRESÓ DE PILATS\" (TARRAGONA)</h3>  <p>La Torre del Pretorio, situada en la parte alta de Tarragona, fue construida en época romana y ha tenido multitud de funciones, desde fortaleza a residencia real. A partir del siglo XIX y durante buena parte del siglo XX, la Torre del Pretorio fue adaptada como prisión provincial de Tarragona, conocida popularmente como la “Presó de Pilats”.</p>  <p>Con el estallido de la Guerra de España el edificio pasó sucesivamente por manos republicanas y, tras la ocupación de Tarragona por las tropas franquistas el 15 de enero de 1939, se convirtió en un centro clave de represión.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tarragona.Pretorio.jpg/960px-Tarragona.Pretorio.jpg\"         alt=\"Torre del Pretorio de Tarragona\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Entre 1939 y 1948, más de 6.900 personas pasaron por sus celdas, la mayoría republicanos, sindicalistas, maestros, milicianos o civiles vinculados al bando vencido. Su capacidad real era de unos 70-100 presos, pero llegó a albergar más de 1.300 internos simultáneamente, según datos del Archivo Municipal de Tarragona.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia / Archivo Municipal de Tarragona; Imagen: Wikipedia</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2024-11-22",
+        "Fuentes": "Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia",
+        "descripcion": "La Torre del Pretorio, situada en la parte alta de Tarragona, fue construida en época romana y ha tenido multitud de funciones, desde fortaleza a residencia real. \n\nA partir del siglo XIX y durante buena parte del siglo XX, la Torre del Pretorio fue adaptada como prisión provincial de Tarragona, conocida popularmente como la “Presó de Pilats”.\n\nCon el estallido de la Guerra de España el edificio pasó sucesivamente por manos republicanas y, tras la ocupación de Tarragona por las tropas franquistas el 15 de enero de 1939, se convirtió en un centro clave de represión. \n\n{{https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tarragona.Pretorio.jpg/960px-Tarragona.Pretorio.jpg}}\n\nEntre 1939 y 1948, más de 6.900 personas pasaron por sus celdas, la mayoría republicanos, sindicalistas, maestros, milicianos o civiles vinculados al bando vencido. Su capacidad real era de unos 70-100 presos, pero llegó a albergar más de 1.300 internos simultáneamente, según datos del Archivo Municipal de Tarragona.\n"
+      },
+      "id": "nXhGa"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.160777,
+          40.640744
+        ]
+      },
+      "properties": {
+        "name": "<h3>VALLE DE CUELGAMUROS</h3>  <p>El Valle de Cuelgamuros, antes denominado Valle de los Caídos, es el principal monumento del franquismo. Fue concebido por el dictador Francisco Franco para celebrar su victoria militar y dar cobijo a los cuerpos de sus partidarios en la guerra.</p>  <div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin: 10px 0;\">   <iframe src=\"https://www.youtube.com/embed/5TBbZxjz7n4\"            style=\"position:absolute; top:0; left:0; width:100%; height:100%;\"            frameborder=\"0\"            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"            allowfullscreen>   </iframe> </div>  <p>Tardó en torno a diecinueve años en construirse y para ello, se usó en buena parte mano de obra penada. Lo inauguró el dictador el 1 de abril de 1959, en el vigésimo aniversario de su victoria en la guerra. Desde el principio, fue un monumento concebido solo para los vencedores.</p>  <p>   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/SPA-2014-San_Lorenzo_de_El_Escorial-Valley_of_the_Fallen_%28Valle_de_los_Ca%C3%ADdos%29.jpg/500px-SPA-2014-San_Lorenzo_de_El_Escorial-Valley_of_the_Fallen_%28Valle_de_los_Ca%C3%ADdos%29.jpg\"         alt=\"Vista del Valle de Cuelgamuros\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Francisco Franco y José Antonio Primo de Rivera estuvieron enterrados en su interior, siendo durante décadas un lugar de culto para los seguidores de la ideología fascista y franquista. A raíz de la aprobación de la Ley de Memoria Histórica (Ley 52/2007, de 26 de diciembre) y del Real Decreto-ley 10/2018 de agosto que la modificó puntualmente, el Gobierno impulsó la exhumación del Dictador el 24 de octubre de 2019.</p>  <p>   <img src=\"https://elvalledecuelgamuros.gob.es/sites/default/files/styles/image1140x640/public/traslado_a_las_criptas.jpg?itok=uXpkypeh\"         alt=\"Traslado a las criptas\"         style=\"max-width:100%; height:auto;\"> </p>  <p>Al amparo de la nueva Ley de Memoria Democrática, El Valle está considerado un cementerio civil que interpela a todas las víctimas de la guerra y la represión en un marco de derechos humanos.</p>  <br> <br>  <p>Texto: Ministerio de la Presidencia, Relaciones con las Cortes y Memoria Democrática; Imagen: Wikipedia / Gobierno de España; Video: YouTube</p>",
+        "_umap_options": {
+          "popupShape": "Large",
+          "popupTemplate": "Default",
+          "showLabel": false
+        },
+        "Fecha declaración": "2022-10-21",
+        "descripcion": "El Valle de Cuelgamuros, antes denominado Valle de los Caídos, es el principal monumento del franquismo. Fue concebido por el dictador Francisco Franco para celebrar su victoria militar y dar cobijo a los cuerpos de sus partidarios en la guerra.\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5TBbZxjz7n4?si=L5QpgEP6VS_5fsuT\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\nTardó en torno a diecinueve años en construirse y para ello, se usó en buena parte mano de obra penada. Lo inauguró el dictador el 1 de abril de 1959, en el vigésimo aniversario de su victoria en la guerra. Desde el principio, fue un monumento concebido solo para los vencedores. {{https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/SPA-2014-San_Lorenzo_de_El_Escorial-Valley_of_the_Fallen_%28Valle_de_los_Ca%C3%ADdos%29.jpg/500px-SPA-2014-San_Lorenzo_de_El_Escorial-Valley_of_the_Fallen_%28Valle_de_los_Ca%C3%ADdos%29.jpg}}\n\nFrancisco Franco y José Antonio Primo de Rivera estuvieron enterrados en su interior, siendo durante décadas un lugar de culto para los seguidores de la ideología fascista y franquista. A raíz de la aprobación de la Ley de Memoria Histórica (Ley 52/2007, de 26 de diciembre) y del Real Decreto-ley 10/2018 de agosto que la modificó puntualmente, el Gobierno impulsó la exhumación del Dictador el 24 de octubre de 2019.\n{{https://elvalledecuelgamuros.gob.es/sites/default/files/styles/image1140x640/public/traslado_a_las_criptas.jpg?itok=uXpkypeh}}\nAl amparo de la nueva Ley de Memoria Democrática, El Valle está considerado un cementerio civil que interpela a todas las víctimas de la guerra y la represión en un marco de derechos humanos."
+      },
+      "id": "btGOA"
+    }
+  ]
+}
